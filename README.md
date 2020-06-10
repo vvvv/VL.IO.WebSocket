@@ -1,6 +1,5 @@
 # VL.IO.Websocket
-Set of nodes to use run a webserver from VL.
-Based on the excellent .NET library [WatsonWebsocket](https://github.com/jchristn/WatsonWebsocket)
+Set of nodes to use websocket client and server in VL. Based on the excellent .NET library [WatsonWebsocket](https://github.com/jchristn/WatsonWebsocket)
 
 Try it with vvvv, the visual live-programming environment for .NET  
 Download: http://visualprogramming.net
