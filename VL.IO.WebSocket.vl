@@ -15,7 +15,7 @@
         </p:NodeReference>
         <Patch Id="FuTdmkn6pW0PnlaMZ7Bj7C">
           <Canvas Id="UqQHslkuLOFQCzO92EM37q" CanvasType="Group">
-            <Node Bounds="180,278,353,406" Id="UZGWd6q8WRXLVSqk3hqsBP">
+            <Node Bounds="160,348,353,406" Id="UZGWd6q8WRXLVSqk3hqsBP">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ProcessStatefulRegion" Name="Cache" />
@@ -28,14 +28,13 @@
                 </p:TypeAnnotation>
               </Pin>
               <Pin Id="SQaBtYbCWGYOanEKcUPNLR" Name="Has Changed" Kind="OutputPin" />
-              <ControlPoint Id="BmykKrP57QwOa3H0UMLGSa" Bounds="235,618" Alignment="Bottom" />
-              <ControlPoint Id="DcJNy6kSjNmPyueJAiopSb" Bounds="238,288" Alignment="Top" />
-              <ControlPoint Id="VvNH14L6u1bLfCzxjiNogp" Bounds="206,288" Alignment="Top" />
-              <ControlPoint Id="PrnvN6Mnye3Nz4sunMmbkA" Bounds="389,288" Alignment="Top" />
+              <ControlPoint Id="BmykKrP57QwOa3H0UMLGSa" Bounds="215,748" Alignment="Bottom" />
+              <ControlPoint Id="DcJNy6kSjNmPyueJAiopSb" Bounds="218,354" Alignment="Top" />
+              <ControlPoint Id="PrnvN6Mnye3Nz4sunMmbkA" Bounds="369,354" Alignment="Top" />
               <Patch Id="CX3CxRA4HTtQaS5qZwzRtr" ManuallySortedPins="true">
                 <Patch Id="TwpW5GozlFQN7Hy8XrzvcQ" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="OCfZAG8ciRDOb1wdfV3OUJ" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="236,301,60,19" Id="IfcxnO2p9gAQHbekwXFpI4">
+                <Node Bounds="216,371,60,19" Id="IfcxnO2p9gAQHbekwXFpI4">
                   <p:NodeReference LastCategoryFullName="System.Uri" LastSymbolSource="System.Runtime.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="Uri" />
@@ -51,7 +50,7 @@
                   <Pin Id="RSmH5QjRniAL3HghdOwewz" Name="Result (return)" Kind="OutputPin" />
                   <Pin Id="U0Wi9J9WmetQcxbNktvB6p" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="204,363,250,234" Id="FyI4N71Z7YmObpV2Es8a73">
+                <Node Bounds="183,430,318,304" Id="FyI4N71Z7YmObpV2Es8a73">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -61,7 +60,7 @@
                   <Patch Id="TJBt3PHXmS9Ot3bllzaESE" ManuallySortedPins="true">
                     <Patch Id="ENHrHyJHyVYNRbhuR9e1yG" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="Aj6l1RckE92QXGfZp4My9B" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="234,380,275,264" Id="N3LjhtTAjvQP7rJZX1ptFb">
+                    <Node Bounds="214,450,275,264" Id="N3LjhtTAjvQP7rJZX1ptFb">
                       <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.vl">
                         <Choice Kind="ProcessAppFlag" Name="Try" />
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
@@ -75,8 +74,8 @@
                         <Patch Id="L3C0NL66rtDPLcajEXreqq" Name="Try" ManuallySortedPins="true">
                           <Pin Id="SGNr7Vxru6vP0opxHS2wxn" Name="Output" Kind="OutputPin" />
                         </Patch>
-                        <ControlPoint Id="A9fwthlcLOqOot2Lkh7jPA" Bounds="248,637" />
-                        <Node Bounds="247,415,73,26" Id="IM7PsfQUZ9XP9rogw89LS7">
+                        <ControlPoint Id="A9fwthlcLOqOot2Lkh7jPA" Bounds="228,707" />
+                        <Node Bounds="227,485,73,26" Id="IM7PsfQUZ9XP9rogw89LS7">
                           <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="WatsonWebsocket" />
@@ -87,7 +86,7 @@
                           <Pin Id="FYuWrPUTNvpLBqJ2kHVTwo" Name="Uri" Kind="InputPin" />
                           <Pin Id="LcT9PiqYyGpQQHOsUJmxUZ" Name="Output" Kind="StateOutputPin" />
                         </Node>
-                        <Node Bounds="247,459,73,26" Id="PqE72oauhbHOVtQuse4fYA">
+                        <Node Bounds="227,529,73,26" Id="PqE72oauhbHOVtQuse4fYA">
                           <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="WatsonWsClient" />
@@ -97,7 +96,7 @@
                           <Pin Id="Hw18aXIVCPrMFnL5dtiDiR" Name="Value" Kind="InputPin" />
                           <Pin Id="MhAU9QIK8DxLUUnZMkaU9T" Name="Output" Kind="StateOutputPin" />
                         </Node>
-                        <Node Bounds="246,587,73,26" Id="LsAZYVtgPN8LBkW2zEhADZ">
+                        <Node Bounds="226,657,73,26" Id="LsAZYVtgPN8LBkW2zEhADZ">
                           <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="Start" />
@@ -106,7 +105,7 @@
                           <Pin Id="L8J6iMPqOrMONLVLf6ITxI" Name="Input" Kind="StateInputPin" />
                           <Pin Id="H5Bl2SCvUS3Mw7pMR3D9Pw" Name="Output" Kind="StateOutputPin" />
                         </Node>
-                        <Node Bounds="415,430,82,92" Id="Q3i3WUJuHjKQcujulPYFUO">
+                        <Node Bounds="395,500,82,92" Id="Q3i3WUJuHjKQcujulPYFUO">
                           <p:NodeReference>
                             <Choice Kind="ApplicationRegion" Name="Delegate" />
                             <FullNameCategoryReference ID="Primitive" />
@@ -114,8 +113,8 @@
                           <Pin Id="M0VR4f44ydcLFoMAwjnAVL" Name="Functionality" Kind="OutputPin" />
                           <Patch Id="EdqnNyOiFLzLEi9ccHivFf" ManuallySortedPins="true">
                             <Pin Id="OQIoelGT94hPmInG6G8pKG" Name="Arg" Kind="InputPin" />
-                            <ControlPoint Id="VywclKTFAVtOD3HKftGe45" Bounds="429,448" />
-                            <Node Bounds="427,476,58,26" Id="Lt53aMOR3jgMH0wlWXCEOz">
+                            <ControlPoint Id="VywclKTFAVtOD3HKftGe45" Bounds="409,518" />
+                            <Node Bounds="407,546,58,26" Id="Lt53aMOR3jgMH0wlWXCEOz">
                               <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="WriteLine" />
@@ -129,7 +128,7 @@
                             </Node>
                           </Patch>
                         </Node>
-                        <Node Bounds="246,548,142,26" Id="CpIqSUTezyjOelHD0p78Qq">
+                        <Node Bounds="226,618,142,26" Id="CpIqSUTezyjOelHD0p78Qq">
                           <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="WatsonWsClient" />
@@ -142,10 +141,10 @@
                       </Patch>
                     </Node>
                   </Patch>
-                  <ControlPoint Id="PaIDBE0nAIIPkxeOEanGzY" Bounds="235,591" Alignment="Bottom" />
-                  <ControlPoint Id="GO9e395od7ZMdnDRqKKbsa" Bounds="224,370" Alignment="Top" />
+                  <ControlPoint Id="PaIDBE0nAIIPkxeOEanGzY" Bounds="215,728" Alignment="Bottom" />
+                  <ControlPoint Id="GO9e395od7ZMdnDRqKKbsa" Bounds="204,436" Alignment="Top" />
                 </Node>
-                <Node Bounds="204,331,37,19" Id="PoqigxQ3uBxPWnGPfYiBEU">
+                <Node Bounds="184,401,37,19" Id="PoqigxQ3uBxPWnGPfYiBEU">
                   <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="AND" />
@@ -157,9 +156,9 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="CwXfryNz7t7Pt2QVWgGoX2" Bounds="238,219" />
-            <ControlPoint Id="GYEaewbKosiPZWMFLzeNC5" Bounds="1077,347" />
-            <Node Bounds="565,158,56,19" Id="OWQwRPe4e7KO2eDOqiFLwv">
+            <ControlPoint Id="CwXfryNz7t7Pt2QVWgGoX2" Bounds="218,289" />
+            <ControlPoint Id="GYEaewbKosiPZWMFLzeNC5" Bounds="1057,417" />
+            <Node Bounds="563,241,56,19" Id="OWQwRPe4e7KO2eDOqiFLwv">
               <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="TogEdge" />
@@ -168,8 +167,8 @@
               <Pin Id="SdI1lbsgdHFOjUIynww7zt" Name="Up Edge" Kind="OutputPin" />
               <Pin Id="GmeC6lv9mPjLqH7cF19Orw" Name="Down Edge" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="FzAeVB3yxnLMR4rssAnXzB" Bounds="566,131" />
-            <Node Bounds="97,724,65,19" Id="QbISRetRltFON8m1hjBV2j">
+            <ControlPoint Id="FzAeVB3yxnLMR4rssAnXzB" Bounds="385,197" />
+            <Node Bounds="77,794,65,19" Id="QbISRetRltFON8m1hjBV2j">
               <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="IsAssigned" />
@@ -178,7 +177,7 @@
               <Pin Id="VPMTkTmGZO2Mn3tLQjdtJc" Name="Result" Kind="OutputPin" />
               <Pin Id="JDduq7r0X84QMWy2P3UAf0" Name="Not Assigned" Kind="OutputPin" />
             </Node>
-            <Node Bounds="102,786,620,256" Id="N9bWZR9ZlSrPVdcCWBAALx">
+            <Node Bounds="82,856,620,256" Id="N9bWZR9ZlSrPVdcCWBAALx">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -188,7 +187,7 @@
               <Patch Id="DQTk68xbmrILJSqufXLV1J" ManuallySortedPins="true">
                 <Patch Id="BsF6ACKQzwDORVJBDzWmm3" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="GWSTc0wjrLHQdvsj01lSgI" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="469,880,73,26" Id="JVxKx2sidClND0cXwqVwj5">
+                <Node Bounds="449,950,73,26" Id="JVxKx2sidClND0cXwqVwj5">
                   <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="WatsonWsClient" />
@@ -198,7 +197,7 @@
                   <Pin Id="VwwmsySKyYlNctrX6XhiEc" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="BYSTdO7mLz7O6V3EAaIe5M" Name="Stats" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="335,809,73,26" Id="NeUjbw8WNkKL9GUvrMaKCB">
+                <Node Bounds="315,879,73,26" Id="NeUjbw8WNkKL9GUvrMaKCB">
                   <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="WatsonWsClient" />
@@ -208,7 +207,7 @@
                   <Pin Id="FX0BAE9QWPCPy3VjhRGmUw" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="QWA8i367hBlPhWWVFjmwGN" Name="Connected" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="158,813,95,26" Id="MyrwjP5aSmrMD5x3cOEA60">
+                <Node Bounds="138,883,95,26" Id="MyrwjP5aSmrMD5x3cOEA60">
                   <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="MessageReceived" />
@@ -217,7 +216,7 @@
                   <Pin Id="K9ZX93EO50gPXfm0pR1UcQ" Name="Input" Kind="StateInputPin" />
                   <Pin Id="NlXryv3SZozPJxPOGR3wiD" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="154,885,138,130" Id="MNxgcXMYZDQNR0tPb9mWC9">
+                <Node Bounds="134,955,138,130" Id="MNxgcXMYZDQNR0tPb9mWC9">
                   <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
                     <Choice Kind="ProcessAppFlag" Name="ForEach" />
                     <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
@@ -232,9 +231,9 @@
                       <Pin Id="TZirbGAFOC9PKhCKzDUJcz" Name="Input 1" Kind="InputPin" />
                       <Pin Id="Q4LnRwR85F5L8KxoUXjFTZ" Name="Output" Kind="OutputPin" />
                     </Patch>
-                    <ControlPoint Id="CWLSN9YgzibM8A4q2sUC9o" Bounds="168,894" />
-                    <ControlPoint Id="N38WKQWZVw3NkXPNtsj9be" Bounds="168,1008" />
-                    <Node Bounds="166,908,62,26" Id="DdZ5lIW001kPbUZCi3gnRJ">
+                    <ControlPoint Id="CWLSN9YgzibM8A4q2sUC9o" Bounds="148,964" />
+                    <ControlPoint Id="N38WKQWZVw3NkXPNtsj9be" Bounds="148,1078" />
+                    <Node Bounds="146,978,62,26" Id="DdZ5lIW001kPbUZCi3gnRJ">
                       <p:NodeReference LastCategoryFullName="Reactive.EventPattern" LastSymbolSource="VL.Reactive.vl">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="RecordType" Name="EventPattern" />
@@ -243,7 +242,7 @@
                       <Pin Id="VwTAiSefVohMp0WEhNcXQJ" Name="Input" Kind="StateInputPin" />
                       <Pin Id="IKwiysK0t8NLvkQf6YeH4V" Name="Event Args" Kind="OutputPin" />
                     </Node>
-                    <Node Bounds="166,950,114,26" Id="LdDZstpWBnXOKRBDllW83H">
+                    <Node Bounds="146,1020,114,26" Id="LdDZstpWBnXOKRBDllW83H">
                       <p:NodeReference LastCategoryFullName="WatsonWebsocket.MessageReceivedEventArgs" LastSymbolSource="WatsonWebsocket.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <CategoryReference Kind="AssemblyCategory" Name="MessageReceivedEventArgs" />
@@ -255,7 +254,7 @@
                     </Node>
                   </Patch>
                 </Node>
-                <Node Bounds="538,958,55,19" Id="VEPjn388JYPP1INgZZ9qA0">
+                <Node Bounds="518,1028,55,19" Id="VEPjn388JYPP1INgZZ9qA0">
                   <p:NodeReference LastCategoryFullName="System.Conversion" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToString" />
@@ -263,7 +262,7 @@
                   <Pin Id="GiMx7hqBaRLLKBRLng7f1q" Name="Input" Kind="InputPin" />
                   <Pin Id="I9WcMt6ZveOObFmixxERsO" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="637,942,73,26" Id="BOamgXxJkgQLgNTJfot9XY">
+                <Node Bounds="617,1012,73,26" Id="BOamgXxJkgQLgNTJfot9XY">
                   <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="AssemblyCategory" Name="WatsonWsClient" />
@@ -274,16 +273,16 @@
                   <Pin Id="Shd6R3u0ugxN6H3YDaBUkj" Name="Apply" Kind="InputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="JRSasWFgGGlNuQIXOndOG9" Bounds="173,792" Alignment="Top" />
-              <ControlPoint Id="Lu1uvzfdyIoPZN46qYoiYY" Bounds="118,1036" Alignment="Bottom" />
-              <ControlPoint Id="KeGdqSkDl04LeEHo1nC8me" Bounds="156,1036" Alignment="Bottom" />
-              <ControlPoint Id="QJYxQILXIj8OVysSmFJKtw" Bounds="157,792" Alignment="Top" />
-              <ControlPoint Id="GeaKQr7xD7wLdyVic7qBkT" Bounds="367,1036" Alignment="Bottom" />
-              <ControlPoint Id="Vp8C1OTBTmYNbRnKLNl0OJ" Bounds="367,792" Alignment="Top" />
-              <ControlPoint Id="KaW5EEZhHr4PnOWKcCaL2Y" Bounds="541,1036" Alignment="Bottom" />
-              <ControlPoint Id="P46s0GxvTuHONruEgkb3E2" Bounds="542,792" Alignment="Top" />
+              <ControlPoint Id="JRSasWFgGGlNuQIXOndOG9" Bounds="153,862" Alignment="Top" />
+              <ControlPoint Id="Lu1uvzfdyIoPZN46qYoiYY" Bounds="98,1106" Alignment="Bottom" />
+              <ControlPoint Id="KeGdqSkDl04LeEHo1nC8me" Bounds="136,1106" Alignment="Bottom" />
+              <ControlPoint Id="QJYxQILXIj8OVysSmFJKtw" Bounds="137,862" Alignment="Top" />
+              <ControlPoint Id="GeaKQr7xD7wLdyVic7qBkT" Bounds="347,1106" Alignment="Bottom" />
+              <ControlPoint Id="Vp8C1OTBTmYNbRnKLNl0OJ" Bounds="347,862" Alignment="Top" />
+              <ControlPoint Id="KaW5EEZhHr4PnOWKcCaL2Y" Bounds="521,1106" Alignment="Bottom" />
+              <ControlPoint Id="P46s0GxvTuHONruEgkb3E2" Bounds="522,862" Alignment="Top" />
             </Node>
-            <Node Bounds="713,222,45,19" Id="CPPrQQQAOCRLXRmGYDsyA7">
+            <Node Bounds="672,239,45,19" Id="CPPrQQQAOCRLXRmGYDsyA7">
               <p:NodeReference LastCategoryFullName="Animation" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="ProcessAppFlag" Name="LFO" />
@@ -299,7 +298,7 @@
               <Pin Id="PkCtDVxgDjWMHHQSJgP92X" Name="On New Cycle" Kind="OutputPin" />
               <Pin Id="R8PZF9zHjfmLG2XTJ3snRZ" Name="Cycles" Kind="OutputPin" />
             </Node>
-            <Node Bounds="733,157,45,19" Id="AAlYsQSy8HZPe6cOESiBWf">
+            <Node Bounds="692,174,45,19" Id="AAlYsQSy8HZPe6cOESiBWf">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="AND" />
@@ -309,8 +308,8 @@
               <Pin Id="LL4RSAqYoLeN3U5uOHiRWG" Name="Output" Kind="StateOutputPin" />
               <Pin Id="TqCR67vyeDVP6qRZ4LEkag" Name="Input 3" Kind="InputPin" />
             </Node>
-            <Pad Id="PLgWIzc1sQENS9ADNwwGue" SlotId="UWIB46OVj7BMVfyQ9yp2Ik" Bounds="888,109" />
-            <Node Bounds="773,121,37,19" Id="CoPRTPqXyd1PvDQNg6KVVk">
+            <Pad Id="PLgWIzc1sQENS9ADNwwGue" SlotId="UWIB46OVj7BMVfyQ9yp2Ik" Bounds="847,126" />
+            <Node Bounds="732,138,37,19" Id="CoPRTPqXyd1PvDQNg6KVVk">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -318,9 +317,9 @@
               <Pin Id="Kd2ZAGuoJPiMJCRnp68z38" Name="Input" Kind="StateInputPin" />
               <Pin Id="Ut9oeRnWbPZNYkVZHTKL10" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <ControlPoint Id="HCKNeZafA81NXiYRmCgpxd" Bounds="773,77" />
-            <ControlPoint Id="NxOHGV2ef96Ph3mcIs1DNK" Bounds="701,53" />
-            <Node Bounds="733,189,37,19" Id="VJtcAk12TgXLX8G4X4uuIY">
+            <ControlPoint Id="HCKNeZafA81NXiYRmCgpxd" Bounds="732,94" />
+            <ControlPoint Id="NxOHGV2ef96Ph3mcIs1DNK" Bounds="660,70" />
+            <Node Bounds="692,206,37,19" Id="VJtcAk12TgXLX8G4X4uuIY">
               <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="NOT" />
@@ -328,7 +327,7 @@
               <Pin Id="DGQTT1R2ERULxuUYGknpbL" Name="Input" Kind="StateInputPin" />
               <Pin Id="UVRAkP1H0A5L6EuOTpXQhj" Name="Output" Kind="StateOutputPin" />
             </Node>
-            <Node Bounds="713,98,25,19" Id="Jh9pfxaVyzPLnR8B5CmKKp">
+            <Node Bounds="672,115,25,19" Id="Jh9pfxaVyzPLnR8B5CmKKp">
               <p:NodeReference LastCategoryFullName="Math" LastSymbolSource="CoreLibBasics.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="+" />
@@ -341,12 +340,12 @@
               </Pin>
               <Pin Id="LuBHO891r9vPs7bCp8hRVD" Name="Output" Kind="OutputPin" />
             </Node>
-            <ControlPoint Id="G6rMSA5mS2FOJ6AEXCuxeN" Bounds="367,1095" />
-            <ControlPoint Id="HegDvB9jqPtLfGLa8Zsurp" Bounds="156,1095" />
-            <Pad Id="TFnms8Q2YM2LOeRqCOfvYY" SlotId="UWIB46OVj7BMVfyQ9yp2Ik" Bounds="350,1062" />
-            <ControlPoint Id="RZ1b0FmlY03PXEQvc5u0jZ" Bounds="1074,665" />
-            <ControlPoint Id="DE4r8iugOkzPadjD8UGHJk" Bounds="541,1095" />
-            <Node Bounds="977,387,81,19" Id="Ih7WOHsZG4PMvcraRtPmK3">
+            <ControlPoint Id="G6rMSA5mS2FOJ6AEXCuxeN" Bounds="347,1165" />
+            <ControlPoint Id="HegDvB9jqPtLfGLa8Zsurp" Bounds="136,1165" />
+            <Pad Id="TFnms8Q2YM2LOeRqCOfvYY" SlotId="UWIB46OVj7BMVfyQ9yp2Ik" Bounds="330,1132" />
+            <ControlPoint Id="RZ1b0FmlY03PXEQvc5u0jZ" Bounds="1054,735" />
+            <ControlPoint Id="DE4r8iugOkzPadjD8UGHJk" Bounds="521,1165" />
+            <Node Bounds="957,457,81,19" Id="Ih7WOHsZG4PMvcraRtPmK3">
               <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ValidateInputs" />
@@ -360,7 +359,7 @@
               <Pin Id="V6FtY79TTCiOc7FVvjWWRt" Name="Data" Kind="InputPin" />
               <Pin Id="Ay5HyqA0ueoO2HQuVrNXEi" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="973,681,81,19" Id="PB6849xxfgdLpz7yhEtvRw">
+            <Node Bounds="953,751,81,19" Id="PB6849xxfgdLpz7yhEtvRw">
               <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                 <Choice Kind="OperationCallFlag" Name="ValidateInputs (Datal)" />
@@ -374,7 +373,7 @@
               <Pin Id="QJsUXcNSTrYLZU33MgzHP3" Name="Data" Kind="InputPin" />
               <Pin Id="ASrnYQhWAOEOQzC4EuelaP" Name="Output" Kind="OutputPin" />
             </Node>
-            <Node Bounds="974,716,173,108" Id="TGXGY5soXbFNfpQ5rNadbO">
+            <Node Bounds="954,786,173,108" Id="TGXGY5soXbFNfpQ5rNadbO">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -382,7 +381,7 @@
               </p:NodeReference>
               <Pin Id="RkbuoExuIlPNcBcLZfMj9d" Name="Condition" Kind="InputPin" />
               <Patch Id="Stwh9g0SSOwPwxWm3nYlPq" ManuallySortedPins="true">
-                <Node Bounds="986,739,73,26" Id="DYnn088ev0oOJsFWMV73cT">
+                <Node Bounds="966,809,73,26" Id="DYnn088ev0oOJsFWMV73cT">
                   <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SendAsync" />
@@ -405,7 +404,7 @@
                 </Node>
                 <Patch Id="AAkNumIPUoHOfgHEUkRRFC" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="O4NB5pHoSJDMxhrysckvfL" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="1056,777,79,26" Id="VC9MXZpMsHUQLkulejgzdT">
+                <Node Bounds="1036,847,79,26" Id="VC9MXZpMsHUQLkulejgzdT">
                   <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToObservable" />
@@ -415,21 +414,21 @@
                   <Pin Id="BttHes9J7mdOWUG1J9Jr4Q" Name="Result" Kind="OutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="BPSefIWmCNrNEyUa7mzhPy" Bounds="1057,818" Alignment="Bottom" />
-              <ControlPoint Id="Hm4EfXCJAnkPaXfGT6ORTf" Bounds="1057,722" Alignment="Top" />
+              <ControlPoint Id="BPSefIWmCNrNEyUa7mzhPy" Bounds="1037,888" Alignment="Bottom" />
+              <ControlPoint Id="Hm4EfXCJAnkPaXfGT6ORTf" Bounds="1037,792" Alignment="Top" />
             </Node>
-            <ControlPoint Id="Mft9dahW18QL8URitpejgX" Bounds="1058,847" />
-            <Node Bounds="972,452,172,164" Id="J5BEoAbSNIDPUSYFYWVbIT">
+            <ControlPoint Id="Mft9dahW18QL8URitpejgX" Bounds="1038,917" />
+            <Node Bounds="952,522,172,164" Id="J5BEoAbSNIDPUSYFYWVbIT">
               <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                 <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                 <Choice Kind="ApplicationStatefulRegion" Name="If" />
                 <FullNameCategoryReference ID="Primitive" />
               </p:NodeReference>
               <Pin Id="KFHvVepO3NjO7UWVBUorSx" Name="Condition" Kind="InputPin" />
-              <ControlPoint Id="PuPeUPXhKnpMGMksnnvX0P" Bounds="1059,610" Alignment="Bottom" />
-              <ControlPoint Id="Bkm31i2lts4M9EZwBOajcU" Bounds="1103,458" Alignment="Top" />
+              <ControlPoint Id="PuPeUPXhKnpMGMksnnvX0P" Bounds="1039,680" Alignment="Bottom" />
+              <ControlPoint Id="Bkm31i2lts4M9EZwBOajcU" Bounds="1083,528" Alignment="Top" />
               <Patch Id="J4Vra3hTbeCOTvWI9Mh9t5" ManuallySortedPins="true">
-                <Node Bounds="984,521,73,26" Id="JwEM0TYlnLROc7xVfGIYto">
+                <Node Bounds="964,591,73,26" Id="JwEM0TYlnLROc7xVfGIYto">
                   <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="SendAsync" />
@@ -456,7 +455,7 @@
                 </Node>
                 <Patch Id="KGD1PALZVsfQdc3GNNTGPi" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="Okzw4qw8ESAO6yTnplVrjG" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="1053,563,79,26" Id="VpBDCNCsQktMEP7I6kTB4e">
+                <Node Bounds="1033,633,79,26" Id="VpBDCNCsQktMEP7I6kTB4e">
                   <p:NodeReference LastCategoryFullName="Reactive.Task" LastSymbolSource="VL.Reactive.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToObservable" />
@@ -465,7 +464,7 @@
                   <Pin Id="ELJ3FDAMqnoPQmr5MKdURN" Name="Input" Kind="StateInputPin" />
                   <Pin Id="IG5GH8Fm2dQOZ7YL8QtM5O" Name="Result" Kind="OutputPin" />
                 </Node>
-                <Node Bounds="1060,478" Id="Mdw9vo87xN6Phl6pj4ZHvx">
+                <Node Bounds="1040,548,52,19" Id="Mdw9vo87xN6Phl6pj4ZHvx">
                   <p:NodeReference LastCategoryFullName="Primitive.String" LastSymbolSource="CoreLibBasics.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="ToBytes" />
@@ -477,9 +476,19 @@
                 </Node>
               </Patch>
             </Node>
-            <ControlPoint Id="VJUm6jwFQppLmnAO8wqC4o" Bounds="1054,633" />
-            <ControlPoint Id="MBOgUhpf2QUM0wsqa3R66f" Bounds="389,244" />
-            <ControlPoint Id="KDjkdGel3ZnLrVQPhFsE5Z" Bounds="1141,383" />
+            <ControlPoint Id="VJUm6jwFQppLmnAO8wqC4o" Bounds="1034,703" />
+            <ControlPoint Id="MBOgUhpf2QUM0wsqa3R66f" Bounds="369,327" />
+            <ControlPoint Id="KDjkdGel3ZnLrVQPhFsE5Z" Bounds="1121,453" />
+            <Node Bounds="563,273,30,19" Id="BjnpTyjWwISNyQiSaUAn3h">
+              <p:NodeReference LastCategoryFullName="Primitive.Boolean" LastSymbolSource="CoreLibBasics.vl">
+                <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                <Choice Kind="OperationCallFlag" Name="OR" />
+                <CategoryReference Kind="BooleanType" Name="Boolean" NeedsToBeDirectParent="true" />
+              </p:NodeReference>
+              <Pin Id="VpmfgGMCnuQM6EGcmnwwJ0" Name="Input" Kind="StateInputPin" />
+              <Pin Id="EPOGgrszyf3NX5WCZQ0GYb" Name="Input 2" Kind="InputPin" />
+              <Pin Id="GeUQCjpDmAdP6d47dVs0pw" Name="Output" Kind="StateOutputPin" />
+            </Node>
           </Canvas>
           <Patch Id="A3ZqxrdYS58Oh3YuB5fO5q" Name="Create (Internal)" />
           <ProcessDefinition Id="F3EjZcfMMV4QX9u90OKbLl" HasStateOut="true">
@@ -559,7 +568,6 @@
           <Link Id="GbKMGGhpjRQNPPhW6HuUGg" Ids="VywclKTFAVtOD3HKftGe45,P3m5DrjOVyzN5UANxr9u3e" />
           <Link Id="VMQkG5UuHxjNwCQhlsSD1C" Ids="BGCmHkTYhEhQVqJ1WbgRJK,PaIDBE0nAIIPkxeOEanGzY" />
           <Link Id="Sy4r89nCDEBMWAi6xMvmFM" Ids="CwXfryNz7t7Pt2QVWgGoX2,DcJNy6kSjNmPyueJAiopSb" />
-          <Link Id="FJZjPuAr1FbN0mVClxbmFV" Ids="VvNH14L6u1bLfCzxjiNogp,INEFxibntKsLYqVGFs5Nsc" />
           <Link Id="NvENfr96bc4QCcdHpOlZLV" Ids="RSmH5QjRniAL3HghdOwewz,CvK3Bm51bYnO15pOTvSabT" />
           <Link Id="RLQzUSFY7nTMi1TKhEmD8o" Ids="VrpeLPYdJ4WQR4sbIVDjWh,OUd3mrVDDmsMMiFuLVaUBz" />
           <Link Id="NZdldNQ1DPkLaARJ6ksycH" Ids="G6rMSA5mS2FOJ6AEXCuxeN,N2kx5MbW1h3Mr8b7DtKOU3" IsHidden="true" />
@@ -591,8 +599,6 @@
           <Link Id="KkkibYtFh3PNAMsGfd1aik" Ids="IG5GH8Fm2dQOZ7YL8QtM5O,PuPeUPXhKnpMGMksnnvX0P" />
           <Link Id="EliYTpOEIoROpxkY8FV2tE" Ids="PuPeUPXhKnpMGMksnnvX0P,VJUm6jwFQppLmnAO8wqC4o" />
           <Link Id="U93tTPJF7z6MOuXsji6OBt" Ids="VJUm6jwFQppLmnAO8wqC4o,I83V9R2CTc8NJyT9nPBuGi" IsHidden="true" />
-          <Link Id="V5Rp8RdtsDPOAI14f7NstG" Ids="PkCtDVxgDjWMHHQSJgP92X,FWCKKiJqnuPP6bzcIyubPQ" />
-          <Link Id="PpxTAAyohWSNrpNcdtvSVN" Ids="FzAeVB3yxnLMR4rssAnXzB,VvNH14L6u1bLfCzxjiNogp" />
           <Link Id="Ml5aZg6PDkcM9QAEJWqOLG" Ids="MhAU9QIK8DxLUUnZMkaU9T,GzNPh8yIxvDPPlwEfLszvL" />
           <Link Id="NIRRQfnPSSRODBC8w6CGA6" Ids="BtlQhEu2aMFOUQy0tCpkkb,L8J6iMPqOrMONLVLf6ITxI" />
           <Link Id="F4XENC7ePusPs8SeswXmnx" Ids="PrnvN6Mnye3Nz4sunMmbkA,HOXMIOhnP9wLEd548vDI2n" />
@@ -615,6 +621,10 @@
           <Link Id="JTAUWMNWJMiP4721vfalNr" Ids="P46s0GxvTuHONruEgkb3E2,KaW5EEZhHr4PnOWKcCaL2Y" IsFeedback="true" />
           <Link Id="VshLupvGRmwLDdrzeFVFxk" Ids="I9WcMt6ZveOObFmixxERsO,KaW5EEZhHr4PnOWKcCaL2Y" />
           <Link Id="Ph7CJ5KIKbcLD3xfWy3z3w" Ids="KaW5EEZhHr4PnOWKcCaL2Y,DE4r8iugOkzPadjD8UGHJk" />
+          <Link Id="AYUYU5j5nJ8PHrYX0WVKU1" Ids="PkCtDVxgDjWMHHQSJgP92X,EPOGgrszyf3NX5WCZQ0GYb" />
+          <Link Id="QjTT7T5kZjUPEwqWhVafOy" Ids="SdI1lbsgdHFOjUIynww7zt,VpmfgGMCnuQM6EGcmnwwJ0" />
+          <Link Id="BhJTlfhL3wtPcIYQfpBBRr" Ids="GeUQCjpDmAdP6d47dVs0pw,FWCKKiJqnuPP6bzcIyubPQ" />
+          <Link Id="VohK67oSHMxOx6XDhsgKEB" Ids="FzAeVB3yxnLMR4rssAnXzB,INEFxibntKsLYqVGFs5Nsc" />
         </Patch>
       </Node>
       <!--
