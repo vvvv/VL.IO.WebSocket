@@ -993,10 +993,12 @@
                         </p:TypeArguments>
                       </p:DataTypeReference>
                     </PinReference>
+                    <PinReference Kind="InputPin" Name="Msg Type" />
                   </p:NodeReference>
                   <Pin Id="QOc1ROz4LG7OWJZbG4GCfE" Name="Input" Kind="StateInputPin" />
                   <Pin Id="BLXbOc8OIBTNT4LDnnveXr" Name="Ip Port" Kind="InputPin" />
                   <Pin Id="Qaj1RFdEncaPqKPtbvAcA8" Name="Data" Kind="InputPin" />
+                  <Pin Id="Ge2h3xiPk1ZO2aC4aCmnLC" Name="Msg Type" Kind="InputPin" />
                   <Pin Id="C9yJHYUc882P1m9BXPKKs7" Name="Token" Kind="InputPin" />
                   <Pin Id="UghyVxI2N6aP8c4y6n3RBJ" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="QlpeU9bT0UvNNoZf4guQJc" Name="Result" Kind="OutputPin" />
