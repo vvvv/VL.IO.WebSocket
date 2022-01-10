@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2020.1.3.147" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2020.1.3" />
+<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.3.732" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.3" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -21,7 +21,7 @@
               <Choice Kind="ProcessAppFlag" Name="WebSocketClient" />
             </p:NodeReference>
             <Pin Id="OgTsKjar5xeN2w0pKepeQv" Name="Server" Kind="InputPin" />
-            <Pin Id="QDh4y1n2x9gPeMaMwwGv38" Name="Accept Invalid Certificates" Kind="InputPin" />
+            <Pin Id="QDh4y1n2x9gPeMaMwwGv38" Name="Accept Invalid Certificates" Kind="InputPin" DefaultValue="False" />
             <Pin Id="TiCJviqr3ltMmYmYn5prsD" Name="Connection Timeout in Seconds" Kind="InputPin" />
             <Pin Id="R9q4p5i44YRQHn5L5qMBrs" Name="Auto Reconnect" Kind="InputPin" />
             <Pin Id="MAa3xGHap93LjeYDaBFa10" Name="Enabled" Kind="InputPin" />
@@ -31,7 +31,7 @@
             <Pin Id="P6ujj2W65R7PUmJ4w8sRoW" Name="Is Connected" Kind="OutputPin" />
           </Node>
           <Pad Id="J0qIPu30mxBPfHzEbcaQNa" Comment="Is Connected" Bounds="358,381,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="205,448,65,19" Id="JuWyAXPcZ8vNBeEY1N1Wqy">
+          <Node Bounds="200,424,65,19" Id="JuWyAXPcZ8vNBeEY1N1Wqy">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
@@ -50,6 +50,7 @@
             <Pin Id="HOXTRnhnyX6PFjWhvAjjxo" Name="Listener IP" Kind="InputPin" />
             <Pin Id="TwXNAX5gqarMrmteuokhOM" Name="Port" Kind="InputPin" />
             <Pin Id="C86oFf0UIl5Nl6C9mhGJPT" Name="Enabled" Kind="InputPin" />
+            <Pin Id="CSU6bv7FTnjMQPKSzviDS3" Name="Ssl" Kind="InputPin" />
             <Pin Id="S8NL6VRO9WEMOm6lbIZeGA" Name="Output" Kind="StateOutputPin" />
             <Pin Id="Mj0ljQULWLjQTVBqEoNZ9n" Name="Data" Kind="OutputPin" />
             <Pin Id="Glz64xY4u5fM42gZqEO8jL" Name="Connected Clients" Kind="OutputPin" />
@@ -108,11 +109,7 @@
                 </p:NodeReference>
                 <Pin Id="QpCCfXUzYN8MljbpvVwmZP" Name="Input" Kind="StateInputPin" />
                 <Pin Id="D4c07EA0U3MPJALKXUkvy2" Name="Client" Kind="InputPin" />
-                <Pin Id="Gra77Fyibp9LCrfonGnJIG" Name="Data" Kind="InputPin">
-                  <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
-                    <Choice Kind="TypeFlag" Name="String" />
-                  </p:TypeAnnotation>
-                </Pin>
+                <Pin Id="Gra77Fyibp9LCrfonGnJIG" Name="Data" Kind="InputPin" />
                 <Pin Id="Krqlg6ZjYNMOaYn1oiiu4y" Name="Output" Kind="StateOutputPin" />
                 <Pin Id="FN1MchL3zK6LWVtMHdvb5k" Name="Result" Kind="OutputPin" />
               </Node>
@@ -152,7 +149,7 @@
             </p:TypeAnnotation>
           </Pad>
           <Node Bounds="46,466,99,80" Id="HntoWaRmB2PN5GSMr1JxlO">
-            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ApplicationStatefulRegion" Name="If" />
               <CategoryReference Kind="Category" Name="Primitive" />
@@ -223,6 +220,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
+          <Pad Id="R68jC6hOiu0MIgT1i9f57U" Comment="On Data" Bounds="262,473,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
@@ -245,7 +243,6 @@
         <Link Id="UBehJdPf6aDPg15BhQt37r" Ids="PFdE5jGv9OtMZ1datsWoKU,MAa3xGHap93LjeYDaBFa10" />
         <Link Id="Fhhng5OQat4NXcBNRGJadI" Ids="IGkLLrBWeCQM87bFZTVhSq,MQr2sxdNYPDNsCgZNQtNXN" />
         <Link Id="IbUvVY13QTULW7x6hHbEBg" Ids="Glz64xY4u5fM42gZqEO8jL,P47fhFCNepQNVSnsD2mwWA" />
-        <Link Id="ShysoZktc6MLum6wpndS0X" Ids="FUdgSjSOlo4N79ot3j2QBB,OgTsKjar5xeN2w0pKepeQv" />
         <Link Id="Oty85LKGFQJPJ4UFR63jEK" Ids="BMG1cMlu7CBPEvY5m0upn7,P9LmcTYfz7CMMrajafCTiS" />
         <Link Id="Ob5Rc4cMGFcMbSfLi0oaAq" Ids="R4DcYM6ySOPLlQQ05hs4vs,MmUDQxmwNYGNlRtatBiRnm" />
         <Link Id="TMuyaeOZZhSM6uormN0dD9" Ids="IIdHCf5zHVCLPm2ZcbAH9c,HOXTRnhnyX6PFjWhvAjjxo" />
@@ -254,9 +251,11 @@
         <Link Id="C76x8kbtuV1MH0P7f10OGV" Ids="VA8nO7Fo6blM4ntHkxg8Wd,D4c07EA0U3MPJALKXUkvy2" />
         <Link Id="GpXFCcqW0hHOqm5buYasuS" Ids="Oi19CUjESSPOqx4LwRgl1m,Gra77Fyibp9LCrfonGnJIG" />
         <Link Id="BrUyuMbOVsFPoNPp81RvLY" Ids="HmCDEHi4qjqL6jSIfdb88t,TCyFtT6Oy1VP7QbZ7MP9rn" />
+        <Link Id="TFPSjdNVcCMNE4mYybZG7j" Ids="Dil8P2d7LREQXYBYjAuCZF,R68jC6hOiu0MIgT1i9f57U" />
+        <Link Id="JfdQVNtI3uZNXb68tBpzKX" Ids="FUdgSjSOlo4N79ot3j2QBB,OgTsKjar5xeN2w0pKepeQv" />
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2020.1.3" />
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.3" />
   <NugetDependency Id="Sc4iYXR3aacNPsnkL18CEp" Location="VL.IO.Websocket" Version="0.0.0.0" />
 </Document>
