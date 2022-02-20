@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Q3MKfK04xKfPYa5St0vmZn" LanguageVersion="2021.4.3.732" Version="0.128">
-  <NugetDependency Id="CGjyqELvV4sQN7kw65KXH6" Location="VL.CoreLib" Version="2021.4.3" />
+<Document xmlns:p="property" Id="Q3MKfK04xKfPYa5St0vmZn" LanguageVersion="2021.4.6.835" Version="0.128">
+  <NugetDependency Id="CGjyqELvV4sQN7kw65KXH6" Location="VL.CoreLib" Version="2021.4.6" />
   <Patch Id="PnuRRVY42jWOFoImv1y8b1">
     <Canvas Id="QtgLw5xbjEzL7UM5oEgNYD" DefaultCategory="IO.WebSocket" CanvasType="FullCategory">
       <!--
@@ -651,10 +651,11 @@
               <ControlPoint Id="IopF5GU8gq7PWkwwCJElhT" Bounds="274,538" Alignment="Bottom" />
               <ControlPoint Id="SFqOi3E5jfgNDFNrzF2CYn" Bounds="268,202" Alignment="Top" />
               <ControlPoint Id="Mo1pwhHRqqzLHT7PUXZEFZ" Bounds="325,202" Alignment="Top" />
+              <ControlPoint Id="F7CBp5LFQYJOTwIevjxe3L" Bounds="402,196" Alignment="Top" />
               <Patch Id="KddAEp3dmVyNb7nnNghRke" ManuallySortedPins="true">
                 <Patch Id="SAcGGVeNkBjQcjPC67BgkZ" Name="Create" ManuallySortedPins="true" />
                 <Patch Id="KNJkibZq1U2PSer2SuG6wH" Name="Then" ManuallySortedPins="true" />
-                <Node Bounds="243,276,249,238" Id="Amt73LLjKjrOPNgOeBEvC4">
+                <Node Bounds="235,276,249,247" Id="Amt73LLjKjrOPNgOeBEvC4">
                   <p:NodeReference LastCategoryFullName="Primitive" LastSymbolSource="VL.CoreLib.dll">
                     <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
                     <Choice Kind="ApplicationStatefulRegion" Name="If" />
@@ -666,22 +667,15 @@
                   <Patch Id="S36EkReZf9SNg3pTp11ycW" ManuallySortedPins="true">
                     <Patch Id="OTAM3iOgVGbP0z19tSV2Ni" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="QTLtxmbYrG1NS9M14Ly3if" Name="Then" ManuallySortedPins="true" />
-                    <Node Bounds="274,297,206,180" Id="FAbuszdtq0EMrY5OP22MzC">
-                      <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="VL.CoreLib.Experimental.vl">
+                    <Node Bounds="266,308,206,170" Id="TocA3SHJqcwLLCzslhX1wd">
+                      <p:NodeReference LastCategoryFullName="Control" LastSymbolSource="CoreLibBasics.vl">
                         <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
-                        <Choice Kind="ProcessStatefulRegion" Name="Try (1 Output)" />
+                        <Choice Kind="ProcessAppFlag" Name="Try" />
                       </p:NodeReference>
-                      <Pin Id="VIMDgaT7nIkNTebVf2Nx5c" Name="Default Output" Kind="InputPin" />
-                      <Pin Id="CeHoMrAGm2lNUXD5HFOzA0" Name="Result" Kind="OutputPin" />
-                      <Pin Id="OwCOg9R3o9nQHFWI0THFMj" Name="Success" Kind="OutputPin" />
-                      <Pin Id="VYBZVk5FJi6MIUzuWzYJM9" Name="Error Message" Kind="OutputPin" />
-                      <Patch Id="Qi2VJhS7QlvL31zP7fzvvc" ManuallySortedPins="true">
-                        <Patch Id="FZShax5Jyu3Lla16DLOPb9" Name="Create" ManuallySortedPins="true" />
-                        <Patch Id="AZgWiFeUvzKNigeQLNu2LT" Name="Try" ManuallySortedPins="true">
-                          <Pin Id="I5kyO8T2kJNMHPWoleaSuy" Name="Output" Kind="OutputPin" />
-                        </Patch>
-                        <ControlPoint Id="HesWy2YFzirNzgp26uTxq5" Bounds="289,470" />
-                        <Node Bounds="288,320,22,26" Id="FnUov2rbArCPXlGg3sCHLD">
+                      <Patch Id="PFCzPCI1jYNMZ2TEOHuv2p" ManuallySortedPins="true">
+                        <Patch Id="DRDtkAIhnLEM9Na4Xhfl8m" Name="Create" ManuallySortedPins="true" />
+                        <Patch Id="MglAaqIN0EiOG5Lv2SQfKE" Name="Update" ManuallySortedPins="true" />
+                        <Node Bounds="280,331,74,26" Id="FnUov2rbArCPXlGg3sCHLD">
                           <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsServer" LastSymbolSource="WatsonWebsocket.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <CategoryReference Kind="AssemblyCategory" Name="WatsonWebsocket" />
@@ -695,7 +689,7 @@
                           <Pin Id="FkQNf1G8lGiLMuKfcNROP8" Name="Ssl" Kind="InputPin" />
                           <Pin Id="Bp2mau5N6jCLYo1newhrDM" Name="Output" Kind="StateOutputPin" />
                         </Node>
-                        <Node Bounds="286,375,74,26" Id="OU8ZK0QjVzvMVlaXWLB5ir">
+                        <Node Bounds="278,386,74,26" Id="OU8ZK0QjVzvMVlaXWLB5ir">
                           <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsServer" LastSymbolSource="WatsonWebsocket.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="SetLogger" />
@@ -705,7 +699,7 @@
                           <Pin Id="Hy0xSKC6Cl0Ofk0OtCPz2r" Name="Value" Kind="InputPin" />
                           <Pin Id="KcTZ8XSd7SqMahOK1eGbdh" Name="Output" Kind="StateOutputPin" />
                         </Node>
-                        <Node Bounds="287,421,74,26" Id="IV6hCwaF15wP5v4y3kE08G">
+                        <Node Bounds="279,432,74,26" Id="IV6hCwaF15wP5v4y3kE08G">
                           <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsServer" LastSymbolSource="WatsonWebsocket.dll">
                             <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                             <Choice Kind="OperationCallFlag" Name="Start" />
@@ -714,7 +708,7 @@
                           <Pin Id="MW8NDSZxmG3OO4DvkUbEN3" Name="Input" Kind="StateInputPin" />
                           <Pin Id="ONCtNwVDHE5LIXzvUyqDgw" Name="Output" Kind="StateOutputPin" />
                         </Node>
-                        <Node Bounds="386,352,82,89" Id="CkSHHgDXGakO1mICfLoijt">
+                        <Node Bounds="378,363,82,89" Id="CkSHHgDXGakO1mICfLoijt">
                           <p:NodeReference>
                             <Choice Kind="ApplicationRegion" Name="Delegate" />
                             <FullNameCategoryReference ID="Primitive" />
@@ -722,8 +716,8 @@
                           <Pin Id="NA2EYbLNz0BP6b2YcWZEtX" Name="Functionality" Kind="OutputPin" />
                           <Patch Id="E9VAMEHEDBoO3Puq2qEYGx" ManuallySortedPins="true">
                             <Pin Id="IbFMOpZhNNDMlX1b4Hr1UE" Name="Arg" Kind="InputPin" />
-                            <ControlPoint Id="Flt3Einfi6ALd4VrN8Fuln" Bounds="400,370" />
-                            <Node Bounds="398,395,58,26" Id="AHsMm5H5Jx9P8Q5ArsZT47">
+                            <ControlPoint Id="Flt3Einfi6ALd4VrN8Fuln" Bounds="392,381" />
+                            <Node Bounds="390,406,58,26" Id="AHsMm5H5Jx9P8Q5ArsZT47">
                               <p:NodeReference LastCategoryFullName="System.Console" LastSymbolSource="CoreLibBasics.vl">
                                 <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                                 <Choice Kind="OperationCallFlag" Name="WriteLine" />
@@ -738,6 +732,12 @@
                           </Patch>
                         </Node>
                       </Patch>
+                      <Pin Id="HnZJ5uswjSdQUyHEwt51jp" Name="Stick To Last Valid Outputs" Kind="InputPin" />
+                      <Pin Id="MpzlHn5erXMPPuQMwx9DTZ" Name="Reset Region On Failure" Kind="InputPin" />
+                      <Pin Id="KRjS8g5A1ktPKNzhf0sSdc" Name="Success" Kind="OutputPin" />
+                      <Pin Id="Ous2uUAD9OPOT1oImurjvW" Name="Error Message" Kind="OutputPin" />
+                      <Pin Id="RomysqHIWpYL6T99pHD3F0" Name="Failure" Kind="OutputPin" />
+                      <ControlPoint Id="SKZ1thB18qoO8yCe3jRNqP" Bounds="280,473" Alignment="Bottom" />
                     </Node>
                   </Patch>
                 </Node>
@@ -762,7 +762,6 @@
                   <Pin Id="RKP4vtaFPOVQSl1PFuHxSK" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
-              <ControlPoint Id="F7CBp5LFQYJOTwIevjxe3L" Bounds="402,196" Alignment="Top" />
             </Node>
             <ControlPoint Id="PovN3k5761UOZC3IR0P3Fu" Bounds="166,999" />
             <ControlPoint Id="I3O5qV8VAgUPHNtMy80Lch" Bounds="380,999" />
@@ -1102,7 +1101,6 @@
             <Fragment Id="SqbUvaWcs4HNzFFa7xqI37" Patch="FLxAulttH1QLdxPNyrHKHH" />
             <Fragment Id="KEuqRgj8wUdOHbdAnAZh80" Patch="Jnm0ImVzDZ1OC2eL1jFzy6" />
           </ProcessDefinition>
-          <Link Id="FujCYJzJTmGLCwoOf8xvzE" Ids="NA2EYbLNz0BP6b2YcWZEtX,Hy0xSKC6Cl0Ofk0OtCPz2r" />
           <Link Id="E92bnPi40PZNMAGzbH2gN6" Ids="PovN3k5761UOZC3IR0P3Fu,VEdaXzl317zLPVKOAmUu04" IsHidden="true" />
           <Link Id="G556rcSUVdqPvknLi0P6ig" Ids="I3O5qV8VAgUPHNtMy80Lch,OnxP76Mrt2TObHFhekLfyZ" IsHidden="true" />
           <Link Id="KXOk4KsF6Y9P08vk5y8FyT" Ids="IopF5GU8gq7PWkwwCJElhT,QOc1ROz4LG7OWJZbG4GCfE" />
@@ -1128,13 +1126,6 @@
           <Link Id="LU3uQGUj9QHMqfpAyW52rI" Ids="Dhnn1onAE1tLAhfkjGvBJw,BLXbOc8OIBTNT4LDnnveXr" />
           <Link Id="QfNcr1FLGAcMOeo4ZfXppX" Ids="DI3cQtam6fGNmaHoFN55kB,Dhnn1onAE1tLAhfkjGvBJw" IsHidden="true" />
           <Link Id="FGcnMpYm0gFOmLfcvbQL84" Ids="QFVenZZiHZFP1hSur9qbJK,UC11rZWbzcSMy7CNJuWFmb" IsHidden="true" />
-          <Link Id="DQEEcFx65DMP2qNO079127" Ids="HesWy2YFzirNzgp26uTxq5,I5kyO8T2kJNMHPWoleaSuy" IsHidden="true" />
-          <Link Id="HPo4yledLd3L693xajGyHr" Ids="Bp2mau5N6jCLYo1newhrDM,N4ZlTtVzarjMVoATzDnUiO" />
-          <Link Id="MMDX3Mfu9lhN71yugj2V2o" Ids="KcTZ8XSd7SqMahOK1eGbdh,MW8NDSZxmG3OO4DvkUbEN3" />
-          <Link Id="CPdYDAureSnNWruqV3obKR" Ids="ONCtNwVDHE5LIXzvUyqDgw,HesWy2YFzirNzgp26uTxq5" />
-          <Link Id="Q7x1stZertyPEOV7s0ctB8" Ids="CeHoMrAGm2lNUXD5HFOzA0,T5WeA4hU8ckMQ5V14yNjXM" />
-          <Link Id="R5JHL9eprJ0PCVtv6QLPGo" Ids="IbFMOpZhNNDMlX1b4Hr1UE,Flt3Einfi6ALd4VrN8Fuln" IsHidden="true" />
-          <Link Id="EXnvQIwisZfPyjPXlLzAiu" Ids="Flt3Einfi6ALd4VrN8Fuln,GWgNgPpudxvLS3uKDzRJ27" />
           <Link Id="KuaxOvJDCTRNe07I7O0jEz" Ids="R2vTNSbZSr1LLe59DKQSF5,P3G1KdKWkF0PvEQ2fqkxqV" />
           <Link Id="SECbqIcNYbDPt1q81SFTCG" Ids="RKP4vtaFPOVQSl1PFuHxSK,Bh23Lp8RyAuN2SoQgrnCxD" />
           <Link Id="OO6BRBo8UwbNlB3hTFyCP3" Ids="EnQ0kYRwETIM1t8sUxA3Xu,SoAYqUK22nIMrUqjwZ9TUY" />
@@ -1226,6 +1217,13 @@
           <Link Id="E4DebNQu6sFOjdAVxCYiVT" Ids="F7CBp5LFQYJOTwIevjxe3L,FkQNf1G8lGiLMuKfcNROP8" />
           <Link Id="HRjwg6wubSqMO4SdxcdU9A" Ids="SbNWsqZlBt5LMr8Ife340z,F7CBp5LFQYJOTwIevjxe3L" />
           <Link Id="TnOhlVqARV1NOFobqz5SZ7" Ids="TeDxB7lwZXkPj9ZCKuet9T,SbNWsqZlBt5LMr8Ife340z" IsHidden="true" />
+          <Link Id="FujCYJzJTmGLCwoOf8xvzE" Ids="NA2EYbLNz0BP6b2YcWZEtX,Hy0xSKC6Cl0Ofk0OtCPz2r" />
+          <Link Id="HPo4yledLd3L693xajGyHr" Ids="Bp2mau5N6jCLYo1newhrDM,N4ZlTtVzarjMVoATzDnUiO" />
+          <Link Id="MMDX3Mfu9lhN71yugj2V2o" Ids="KcTZ8XSd7SqMahOK1eGbdh,MW8NDSZxmG3OO4DvkUbEN3" />
+          <Link Id="R5JHL9eprJ0PCVtv6QLPGo" Ids="IbFMOpZhNNDMlX1b4Hr1UE,Flt3Einfi6ALd4VrN8Fuln" IsHidden="true" />
+          <Link Id="EXnvQIwisZfPyjPXlLzAiu" Ids="Flt3Einfi6ALd4VrN8Fuln,GWgNgPpudxvLS3uKDzRJ27" />
+          <Link Id="Ab500Ssp4yUOyZ3642m0Uw" Ids="ONCtNwVDHE5LIXzvUyqDgw,SKZ1thB18qoO8yCe3jRNqP" />
+          <Link Id="VgGBdN0wwPHLCYRI6u8PRu" Ids="SKZ1thB18qoO8yCe3jRNqP,T5WeA4hU8ckMQ5V14yNjXM" />
         </Patch>
       </Node>
       <Pad Id="INzjmPoAtYlMoQkvjjlwjE" Bounds="202,183,291,22" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket">
@@ -1441,7 +1439,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QvD4CZU8skYLZynORDmDhr" Location="VL.Skia" Version="2021.4.3" />
+  <NugetDependency Id="QvD4CZU8skYLZynORDmDhr" Location="VL.Skia" Version="2021.4.6" />
   <PlatformDependency Id="STfsXzaK5C0LDV1kwoPISh" Location="System.Runtime" />
   <NugetDependency Id="TrIRH62O7F9MgV8Ot5IVii" Location="WatsonWebsocket" Version="2.3.2.1" />
 </Document>
