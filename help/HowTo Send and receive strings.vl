@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.9.953" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.9-0953-gbf5123ac82" />
+<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.9.957" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.9-0957-gacfca0d7b9" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -81,12 +81,10 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="244,516,86,19" Id="J6Mjnx5e4r3MTGMIOMjDhL">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
+            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="VL.Tokenizer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ReadStringUntil" />
-              <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IXSTAJnSuqrNGywVRgHfVG" Name="Input" Kind="InputPin" />
             <Pin Id="A1N4XiNIHEmPGr6OqCBp1A" Name="Terminator" Kind="InputPin" />
             <Pin Id="IZQk9v5J74mLu4w6LPLS8J" Name="Encoding" Kind="InputPin" />
@@ -101,7 +99,6 @@
                 <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
               </CategoryReference>
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="CdGc1aFEa0fPlJGpHhwjlz" Name="Input" Kind="InputPin" />
             <Pin Id="EzHprMJJX1NPNTZ1aoRNzJ" Name="Terminator" Kind="InputPin" />
             <Pin Id="Ux8Bg9mpTtWPMsuTjQRBdL" Name="Encoding" Kind="InputPin" />
@@ -126,7 +123,6 @@
                 <p:OuterCategoryReference Kind="Category" NeedsToBeDirectParent="true" />
               </CategoryReference>
             </p:NodeReference>
-            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="IBadX3oRwhtMEWEA2yhFd4" Name="Input" Kind="InputPin" />
             <Pin Id="OVjeiEs12WCOJKkjKH0vK4" Name="Terminator" Kind="InputPin" />
             <Pin Id="NbMZ8KRxASdQG0sD4rK8SY" Name="Encoding" Kind="InputPin" />
@@ -239,10 +235,9 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="895,522,86,19" Id="RIskbnRpGrXPy5rprABJL0">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
+            <p:NodeReference LastCategoryFullName="IO" LastSymbolSource="VL.Tokenizer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ReadStringUntil" />
-              <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
             </p:NodeReference>
             <Pin Id="VMdJXXZ05QtNcUwRjv4Cbo" Name="Input" Kind="InputPin" />
             <Pin Id="SoMnyIszqnFLB5sVJQPbUW" Name="Terminator" Kind="InputPin" />
@@ -323,6 +318,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.9-0953-gbf5123ac82" />
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.9-0957-gacfca0d7b9" />
   <NugetDependency Id="Sc4iYXR3aacNPsnkL18CEp" Location="VL.IO.Websocket" Version="0.2.1-alpha" />
 </Document>
