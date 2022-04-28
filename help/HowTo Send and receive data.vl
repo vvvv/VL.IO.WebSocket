@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2021.4.9.953" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.9-0953-gbf5123ac82" />
+<Document xmlns:p="property" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2021.4.9.961" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.9-0961-ga26e6ec306" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -94,6 +94,7 @@
                 <Pin Id="BKGS890ToTMOiBsSPNBUkL" Name="Length Big Endian" Kind="InputPin" />
                 <Pin Id="T1xtLS33HOMQRezvE8Q4dE" Name="Reset" Kind="InputPin" />
                 <Pin Id="OpkrvKkkRkuNusxmsyumrG" Name="Result" Kind="OutputPin" />
+                <Pin Id="KhWZPSYXX6VOVTGIaJBd7b" Name="Buffer Size" Kind="OutputPin" />
                 <Pin Id="TuHJgAxm1IoLqpfiQs01BX" Name="Status" Kind="OutputPin" />
               </Node>
               <Node Bounds="622,483,107,118" Id="LiRICamiQaqM38cSSXwUvF">
@@ -145,7 +146,7 @@
               </Node>
             </Patch>
           </Node>
-          <Pad Id="ThnpSvOVIkYNSaRr1xr3Ap" Comment="Send" Bounds="221,490,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="ThnpSvOVIkYNSaRr1xr3Ap" Comment="Send" Bounds="221,535,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -159,7 +160,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="149,534,59,26" Id="OisovxwqRoHQcLjDUhHdfV">
+          <Node Bounds="149,579,75,26" Id="OisovxwqRoHQcLjDUhHdfV">
             <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketClient" LastSymbolSource="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendData (Async)" />
@@ -172,7 +173,7 @@
             <Pin Id="GcfoRoyYIOhMdEzuCaZx5U" Name="State Output" Kind="OutputPin" />
             <Pin Id="JJufVRakKhHPzRyGqIhW4S" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,324,36,19" Id="Rpyh3FzU1FVQISGD2vKhQO">
+          <Node Bounds="184,369,36,19" Id="Rpyh3FzU1FVQISGD2vKhQO">
             <p:NodeReference LastCategoryFullName="System.DateTime" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Now" />
@@ -180,7 +181,7 @@
             </p:NodeReference>
             <Pin Id="QHSstv9bt60PRl6IKClaDC" Name="Now" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,368,54,19" Id="RpmFAw2EW6mOfpaAc5hluq">
+          <Node Bounds="184,413,54,19" Id="RpmFAw2EW6mOfpaAc5hluq">
             <p:NodeReference LastCategoryFullName="System.Serialization.Volatile" LastSymbolSource="System.Serialization.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Serialize (Binary)" />
@@ -189,7 +190,7 @@
             <Pin Id="Sa52bK50pNGPoLi9rsJYLf" Name="Force Little Endian" Kind="InputPin" />
             <Pin Id="GvALE41w0VWQXiL7VT4Njk" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,401,74,19" Id="D7Ntw69VdBpLXN2z3MeRCS">
+          <Node Bounds="184,446,74,19" Id="D7Ntw69VdBpLXN2z3MeRCS">
             <p:NodeReference LastCategoryFullName="IO.Tokenizer" LastSymbolSource="VL.Tokenizer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="PrefixLength" />
@@ -200,7 +201,7 @@
             <Pin Id="NuLeDnjcabnQav8SeSeoo7" Name="Byte Count" Kind="InputPin" />
             <Pin Id="KfMxEZuQQmMMBt3RvSIkzK" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,434,83,26" Id="TX1gFv3XNtYLMfzbjxc4aU">
+          <Node Bounds="184,479,83,26" Id="TX1gFv3XNtYLMfzbjxc4aU">
             <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FromSequence" />
@@ -238,7 +239,16 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="DHApcbB4CgNNMeCnH6Eh8J" Bounds="652,595,170,19" ShowValueBox="true" isIOBox="true" Value="&lt; Annotated to &quot;DataTime&quot;">
+          <Pad Id="DHApcbB4CgNNMeCnH6Eh8J" Bounds="652,595,170,19" ShowValueBox="true" isIOBox="true" Value="&lt; Annotated to &quot;DateTime&quot;">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Gc2h9dONZV5N5oZtjI8SRM" Bounds="251,379,130,56" ShowValueBox="true" isIOBox="true" Value="&lt; Say we want to send the current time">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
