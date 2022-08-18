@@ -2,7 +2,7 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.WebSocket</id>
-    <version>0.4.2-alpha</version>
+    <version>0.5.0-alpha</version>
     <title>VL.IO.WebSocket</title>
     <authors>vvvv, Joel Christner</authors>
     <owners>vvvv</owners>
@@ -13,7 +13,7 @@
     <tags>VL, network, websocket, ws</tags>
     <license type="expression">MIT</license>
 	<dependencies>
-		<dependency id="WatsonWebsocket" version="2.3.2.5" />
+		<dependency id="WatsonWebsocket" version="2.3.2.6" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
   </metadata>

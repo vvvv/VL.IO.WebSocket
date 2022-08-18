@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.9.961" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.9-0961-ga26e6ec306" />
+<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.10.1043" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.10" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
     <!--
@@ -20,6 +20,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebSocketClient" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="OgTsKjar5xeN2w0pKepeQv" Name="Server" Kind="InputPin" />
             <Pin Id="QDh4y1n2x9gPeMaMwwGv38" Name="Accept Invalid Certificates" Kind="InputPin" DefaultValue="False" />
             <Pin Id="TiCJviqr3ltMmYmYn5prsD" Name="Connection Timeout in Seconds" Kind="InputPin" />
@@ -36,6 +37,7 @@
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebSocketServer" />
             </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="HOXTRnhnyX6PFjWhvAjjxo" Name="Listener IP" Kind="InputPin" />
             <Pin Id="TwXNAX5gqarMrmteuokhOM" Name="Port" Kind="InputPin" />
             <Pin Id="CSU6bv7FTnjMQPKSzviDS3" Name="Ssl" Kind="InputPin" />
@@ -164,7 +166,6 @@
             <Pin Id="GwXi3UtDOyCM7HTmIP4DUQ" Name="Encoding" Kind="InputPin" />
             <Pin Id="NMnnvjr0n4sNABQdcPtZAa" Name="Apply" Kind="InputPin" />
             <Pin Id="Fi87G2nmtEbOwsJUmgtJTn" Name="Output" Kind="StateOutputPin" />
-            <Pin Id="UuLFoI6dGQdL9xH3WqpeaC" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="SXxnpWOrJv2P0eiWJI9bDb" Comment="Data" Bounds="801,663,64,15" ShowValueBox="true" isIOBox="true" Value="from server">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
@@ -215,10 +216,9 @@
             <Pin Id="GkLimprIyfwN2TnkJ5T3dg" Name="Data" Kind="InputPin" />
             <Pin Id="PmA4VopxgSfOyth3lnuySu" Name="Encoding" Kind="InputPin" />
             <Pin Id="CWGQKjXYyCtPXippMSzb5X" Name="Apply" Kind="InputPin" />
-            <Pin Id="R5xkLzh6LSjND5zOXyLYpP" Name="State Output" Kind="OutputPin" />
             <Pin Id="KM135O7bRJEPY3o3iXY3Xz" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="CeUzyCQJ45fNmkUoMNtzrt" Comment="Data" Bounds="89,481,63,16" ShowValueBox="true" isIOBox="true" Value="from client">
+          <Pad Id="CeUzyCQJ45fNmkUoMNtzrt" Comment="Data" Bounds="92,494,63,16" ShowValueBox="true" isIOBox="true" Value="from client">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -254,6 +254,33 @@
             <Pin Id="LocClkk9AZdOdXv4JEehkG" Name="Result" Kind="OutputPin" />
             <Pin Id="PEqqDgkAZQCN5orj7VEiqa" Name="On Data" Kind="OutputPin" />
           </Node>
+          <Pad Id="LBtQIptpKsUNTcwQFovJjO" Bounds="908,193,494,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket#accessing-from-outside-localhost">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AFtij8KXjbPPxLUF6IoW76" Bounds="910,168,210,19" ShowValueBox="true" isIOBox="true" Value="Accessing from Outside Localhost">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="JFlCfaNgmigNnGegJY4Bhh" Bounds="61,148,292,22" ShowValueBox="true" isIOBox="true" Value="https://www.piesocket.com/websocket-tester">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
@@ -285,6 +312,6 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.9-0961-ga26e6ec306" />
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2021.4.10" />
   <NugetDependency Id="Sc4iYXR3aacNPsnkL18CEp" Location="VL.IO.Websocket" Version="0.2.1-alpha" />
 </Document>

@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2021.4.9.961" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.9-0961-ga26e6ec306" />
+<Document xmlns:p="property" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2021.4.10.1024" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.10-1021-g8bbd4c6f55" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -82,6 +82,7 @@
                 <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="H4oVaBivSF7NjJtfabcoep" Name="Input" Kind="StateInputPin" />
                 <Pin Id="EmlJzYgpuXIOrwOWIGH718" Name="Ip Port" Kind="OutputPin" />
+                <Pin Id="P0Tt3mHYmWqMMW51XQZdZA" Name="Message Type" Kind="OutputPin" />
                 <Pin Id="EpJDAoLfia0NdN5ASMV6i3" Name="Data" Kind="OutputPin" />
               </Node>
               <Node Bounds="634,442,65,19" Id="LvNIi4ejwiCMD7LVXSu0pN">
@@ -170,10 +171,9 @@
             <Pin Id="EIqRSafsEQCMcm84fX92Yf" Name="Input" Kind="StateInputPin" />
             <Pin Id="SejiJMYkbPfL3om1e3wsEO" Name="Data" Kind="InputPin" />
             <Pin Id="RomOuXOs2maNVIVzBHadYX" Name="Apply" Kind="InputPin" />
-            <Pin Id="GcfoRoyYIOhMdEzuCaZx5U" Name="State Output" Kind="OutputPin" />
-            <Pin Id="JJufVRakKhHPzRyGqIhW4S" Name="Output" Kind="OutputPin" />
+            <Pin Id="GcfoRoyYIOhMdEzuCaZx5U" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,369,36,19" Id="Rpyh3FzU1FVQISGD2vKhQO">
+          <Node Bounds="184,384,36,19" Id="Rpyh3FzU1FVQISGD2vKhQO">
             <p:NodeReference LastCategoryFullName="System.DateTime" LastSymbolSource="CoreLibBasics.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Now" />
@@ -181,7 +181,7 @@
             </p:NodeReference>
             <Pin Id="QHSstv9bt60PRl6IKClaDC" Name="Now" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,413,54,19" Id="RpmFAw2EW6mOfpaAc5hluq">
+          <Node Bounds="184,428,54,19" Id="RpmFAw2EW6mOfpaAc5hluq">
             <p:NodeReference LastCategoryFullName="System.Serialization.Volatile" LastSymbolSource="System.Serialization.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="Serialize (Binary)" />
@@ -190,7 +190,7 @@
             <Pin Id="Sa52bK50pNGPoLi9rsJYLf" Name="Force Little Endian" Kind="InputPin" />
             <Pin Id="GvALE41w0VWQXiL7VT4Njk" Name="Result" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,446,74,19" Id="D7Ntw69VdBpLXN2z3MeRCS">
+          <Node Bounds="184,461,74,19" Id="D7Ntw69VdBpLXN2z3MeRCS">
             <p:NodeReference LastCategoryFullName="IO.Tokenizer" LastSymbolSource="VL.Tokenizer.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="PrefixLength" />
@@ -200,15 +200,6 @@
             <Pin Id="FD12KtdwvJvPKJmkOD7sqs" Name="Big Endian" Kind="InputPin" />
             <Pin Id="NuLeDnjcabnQav8SeSeoo7" Name="Byte Count" Kind="InputPin" />
             <Pin Id="KfMxEZuQQmMMBt3RvSIkzK" Name="Result" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="184,479,83,26" Id="TX1gFv3XNtYLMfzbjxc4aU">
-            <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArray" LastSymbolSource="VL.Collections.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="FromSequence" />
-              <CategoryReference Kind="ArrayType" Name="MutableArray" NeedsToBeDirectParent="true" />
-            </p:NodeReference>
-            <Pin Id="CTX8KnnNOvCQcFumakHhBx" Name="Input" Kind="StateInputPin" />
-            <Pin Id="GD47IG0ynZ1PZfi3XgFh2T" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="566,701,65,19" Id="GPjuVsJyklAQHiEceZwaCz">
             <p:NodeReference LastCategoryFullName="Reactive" LastSymbolSource="VL.Reactive.vl">
@@ -248,7 +239,34 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Gc2h9dONZV5N5oZtjI8SRM" Bounds="251,379,130,56" ShowValueBox="true" isIOBox="true" Value="&lt; Say we want to send the current time">
+          <Pad Id="Gc2h9dONZV5N5oZtjI8SRM" Bounds="251,394,130,56" ShowValueBox="true" isIOBox="true" Value="&lt; Say we want to send the current time">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BhIRk7eIvwmOCgVoOOHATJ" Bounds="142,94,292,22" ShowValueBox="true" isIOBox="true" Value="https://www.piesocket.com/websocket-tester">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="Pws4kYHgLbmM5iJr8lt7ND" Bounds="726,114,494,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket#accessing-from-outside-localhost">
+            <p:TypeAnnotation>
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KDyVlSRpQkPOnX71EJmOJk" Bounds="728,89,210,19" ShowValueBox="true" isIOBox="true" Value="Accessing from Outside Localhost">
             <p:TypeAnnotation>
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -277,8 +295,6 @@
         <Link Id="A3mN6U094v1LleGxW93SOW" Ids="ThnpSvOVIkYNSaRr1xr3Ap,RomOuXOs2maNVIVzBHadYX" />
         <Link Id="N1qcNnNUj2dOKLgqEF2Ner" Ids="QHSstv9bt60PRl6IKClaDC,FVMRBd97dgBO0dxQXqDpf3" />
         <Link Id="BJYHJo6gizNOir8beo8di8" Ids="GvALE41w0VWQXiL7VT4Njk,CuQ7hOuJTekQUiMKgIGttW" />
-        <Link Id="LiuAshL3EWONYKyRlBnNvA" Ids="KfMxEZuQQmMMBt3RvSIkzK,CTX8KnnNOvCQcFumakHhBx" />
-        <Link Id="O8lxBIzxrZnPkt6EsTwyPH" Ids="GD47IG0ynZ1PZfi3XgFh2T,SejiJMYkbPfL3om1e3wsEO" />
         <Link Id="TEIwKDHM6h4NXdaGMbk2nk" Ids="EpJDAoLfia0NdN5ASMV6i3,LJx54lxrAfrNVgUeFG4sAC" />
         <Link Id="IYxf6ioqYQVLIKXf6qYzYN" Ids="OpkrvKkkRkuNusxmsyumrG,RbuMP8yjM04LzYzyGl2rZr" />
         <Link Id="Vwti1an6sIGQIC7pv5uMSF" Ids="RbuMP8yjM04LzYzyGl2rZr,MaciHLba6VDM6PtymjlUxv" />
@@ -291,6 +307,7 @@
         <Link Id="LuW4iV7x0OLOuOJEJNsnGU" Ids="IAb02p38dHzOkWEv2wJaUe,L1MbmkI9XgVP5Wyc5ClWuO" />
         <Link Id="PfaAhERPuA4OMq0rmapTio" Ids="MbadJU3JKTYLy4hAGk7awQ,UfyzmRMNtN1Nhol25rn2Xa" />
         <Link Id="SBEewEKKEirPjAWiqtKn8j" Ids="NAJOSyVevgrMyMS1JWkgXy,RsBTxhjcbk0MfgmYB07tRD" />
+        <Link Id="Ml0qCwQ2q1BLnsFcygTVcU" Ids="KfMxEZuQQmMMBt3RvSIkzK,SejiJMYkbPfL3om1e3wsEO" />
       </Patch>
     </Node>
   </Patch>
