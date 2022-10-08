@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="Q3MKfK04xKfPYa5St0vmZn" LanguageVersion="2021.4.10.1043" Version="0.128">
-  <NugetDependency Id="CGjyqELvV4sQN7kw65KXH6" Location="VL.CoreLib" Version="2021.4.10" />
+<Document xmlns:p="property" Id="Q3MKfK04xKfPYa5St0vmZn" LanguageVersion="2021.4.9.982" Version="0.128">
+  <NugetDependency Id="CGjyqELvV4sQN7kw65KXH6" Location="VL.CoreLib" Version="2021.4.9" />
   <Patch Id="PnuRRVY42jWOFoImv1y8b1">
     <Canvas Id="QtgLw5xbjEzL7UM5oEgNYD" DefaultCategory="IO.WebSocket" CanvasType="FullCategory">
       <!--
@@ -400,7 +400,7 @@
                   <Pin Id="DGE9NwV9hbRMnbyMaD4PO3" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="975,1485,97,77" Id="Alrk8KDvOCiOj3tMH70e1c">
-                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl">
                     <CategoryReference Kind="ClassType" Name="Task (NonGeneric)" />
                     <Choice Kind="OperationCallFlag" Name="Run" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -423,7 +423,7 @@
                     <Pin Id="U5bnnxE6ihyNksyY0ZjtpB" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="Juwa4GML7bxN9A3l8nhvAs" Bounds="1000,1555" />
                     <Node Bounds="987,1508,73,26" Id="DYnn088ev0oOJsFWMV73cT">
-                      <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                      <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsClient" LastSymbolSource="WatsonWebsocket.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="SendAsync" />
                         <CategoryReference Kind="AssemblyCategory" Name="WatsonWsClient" NeedsToBeDirectParent="true" />
@@ -454,6 +454,10 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="R8Sv3GLB3BGLPncGVTBpQ6" Name="Condition" Kind="InputPin" />
+                  <ControlPoint Id="R32v16lzw7FQYzvTeU4xfe" Bounds="981,1020" Alignment="Top" />
+                  <ControlPoint Id="FxyT9RSN7pUMc8MuFZn7bk" Bounds="1015,1436" Alignment="Bottom" />
+                  <ControlPoint Id="PpYqU7sckuZOkijvbAEeoy" Bounds="1203,1020" Alignment="Top" />
+                  <ControlPoint Id="QPoMMdEVLpwN9rU9s3YewM" Bounds="1110,1436" Alignment="Bottom" />
                   <Patch Id="BhNxuavlHr2OygFBxId0sr" ManuallySortedPins="true">
                     <Patch Id="Ul8r4e0trlHPAbovsmRmAk" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="AalDkMhsWuhNQjvCvfynd4" Name="Then" ManuallySortedPins="true" />
@@ -540,12 +544,11 @@
                       <Pin Id="L2dAwbstfgSQQ7uOV9zhZR" Name="Length" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1012,1386,95,26" Id="Imr0DsuP1LcMectQdtbSZg">
-                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArraySegment" LastSymbolSource="VL.Collections.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                      <p:NodeReference LastCategoryFullName="System.ArraySegment`1" LastSymbolSource="System.Runtime.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="ClassType" Name="MutableArraySegment" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ArraySegment`1" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
                         <PinReference Kind="InputPin" Name="Offset" />
-                        <PinReference Kind="InputPin" Name="Count" />
                       </p:NodeReference>
                       <Pin Id="RdhRfQ2OOkqNj9LpIpnVnD" Name="Array" Kind="InputPin" />
                       <Pin Id="RiiXHDxMkRCQaI6l5YFXKq" Name="Offset" Kind="InputPin" />
@@ -553,10 +556,6 @@
                       <Pin Id="HpNVxr6yod0McIndKAwUqb" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="R32v16lzw7FQYzvTeU4xfe" Bounds="981,1020" Alignment="Top" />
-                  <ControlPoint Id="FxyT9RSN7pUMc8MuFZn7bk" Bounds="1015,1436" Alignment="Bottom" />
-                  <ControlPoint Id="PpYqU7sckuZOkijvbAEeoy" Bounds="1203,1020" Alignment="Top" />
-                  <ControlPoint Id="QPoMMdEVLpwN9rU9s3YewM" Bounds="1110,1436" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="981,882,48,19" Id="ABZGwJSdBNEPUHlmfd83tw">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -578,12 +577,15 @@
                   <Pin Id="D72XHFSUTgdLrUcsG6Dshi" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="979,958,95,26" Id="NCvkoxz9ODsOpAHr8ijXod">
-                  <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArraySegment" LastSymbolSource="VL.Collections.vl">
+                  <p:NodeReference LastCategoryFullName="System.ArraySegment`1" LastSymbolSource="System.Runtime.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="MutableArraySegment" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ArraySegment`1" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
+                    <PinReference Kind="InputPin" Name="Offset" />
                   </p:NodeReference>
                   <Pin Id="GdGU7x8kVwSPeIkAEEWdN1" Name="Array" Kind="InputPin" />
+                  <Pin Id="NRkHniRX0EoMcUEw9XdYda" Name="Offset" Kind="InputPin" />
+                  <Pin Id="NSaQdRzUuYPMMfqscJ4QkQ" Name="Count" Kind="InputPin" />
                   <Pin Id="LgQyfLd8B1lMujM8Jf45bh" Name="Output" Kind="StateOutputPin" />
                 </Node>
               </Patch>
@@ -609,7 +611,7 @@
                   <Pin Id="Pg7qmAIcUouOfBfdZFu9YM" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1006,536,137,117" Id="NdU0cOOsOFgLWwDnu0RQxy">
-                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl">
                     <CategoryReference Kind="ClassType" Name="Task (NonGeneric)" />
                     <Choice Kind="OperationCallFlag" Name="Run" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1185,7 +1187,7 @@
                   <Pin Id="NGTOjxCUGdIOShdjI0Ta2W" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="869,527,145,107" Id="MZvPLABOfYjMmtSh5zdnUU">
-                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl">
                     <CategoryReference Kind="ClassType" Name="Task (NonGeneric)" />
                     <Choice Kind="OperationCallFlag" Name="Run" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1269,7 +1271,7 @@
                   <Pin Id="NRcoKSctbyrNgJ0lotgTHR" Name="Result" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="961,1468,109,83" Id="EU5b3oTZgtzPiX7xgCUdgI">
-                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                  <p:NodeReference LastCategoryFullName="Reactive.Task (NonGeneric)" LastSymbolSource="VL.Reactive.vl">
                     <CategoryReference Kind="ClassType" Name="Task (NonGeneric)" />
                     <Choice Kind="OperationCallFlag" Name="Run" />
                     <Choice Kind="RegionFlag" Name="Region (Stateless)" Fixed="true" />
@@ -1292,7 +1294,7 @@
                     <Pin Id="FiFLeknID8DOYpimPyXWTp" Name="Result" Kind="OutputPin" />
                     <ControlPoint Id="GrhF2r9tVcpLFxBcmQDmUh" Bounds="975,1544" />
                     <Node Bounds="973,1491,85,26" Id="GTmWV3QL7eWNmzlBnfRZ20">
-                      <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsServer" LastSymbolSource="WatsonWebsocket.dll" OverloadStrategy="AllPinsThatAreNotCommon">
+                      <p:NodeReference LastCategoryFullName="WatsonWebsocket.WatsonWsServer" LastSymbolSource="WatsonWebsocket.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                         <Choice Kind="OperationCallFlag" Name="SendAsync" />
                         <CategoryReference Kind="AssemblyCategory" Name="WatsonWsServer" NeedsToBeDirectParent="true" />
@@ -1325,6 +1327,10 @@
                     <CategoryReference Kind="Category" Name="Primitive" />
                   </p:NodeReference>
                   <Pin Id="Usv7vk7cw5lMd26ncZPvqd" Name="Condition" Kind="InputPin" />
+                  <ControlPoint Id="MMeal5vnoLpM72Za1yO3zT" Bounds="1035,1014" Alignment="Top" />
+                  <ControlPoint Id="Av77qRNUm0DPS3lZkWe0EJ" Bounds="1069,1432" Alignment="Bottom" />
+                  <ControlPoint Id="TkjsBewIYPGOfnq60HjFEe" Bounds="1230,1014" Alignment="Top" />
+                  <ControlPoint Id="QT6xThW1apdLf3IlllLito" Bounds="1098,1432" Alignment="Bottom" />
                   <Patch Id="F9usq2zHro3OG3PJrtORTb" ManuallySortedPins="true">
                     <Patch Id="InRkx7NADGeOd4GgDNVivc" Name="Create" ManuallySortedPins="true" />
                     <Patch Id="FMjwaG7tZ1HMl1IFLqS67V" Name="Then" ManuallySortedPins="true" />
@@ -1411,11 +1417,10 @@
                       <Pin Id="BHJqhxlYwLsP6o5Rui1KHU" Name="Length" Kind="OutputPin" />
                     </Node>
                     <Node Bounds="1066,1382,95,26" Id="GAnvnDAJOOONad0wxstolL">
-                      <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArraySegment" LastSymbolSource="VL.Collections.vl" OverloadStrategy="AllPinsThatAreNotCommon">
+                      <p:NodeReference LastCategoryFullName="System.ArraySegment`1" LastSymbolSource="System.Runtime.dll">
                         <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                        <CategoryReference Kind="ClassType" Name="MutableArraySegment" />
+                        <CategoryReference Kind="AssemblyCategory" Name="ArraySegment`1" />
                         <Choice Kind="OperationCallFlag" Name="Create" />
-                        <PinReference Kind="InputPin" Name="Offset" />
                         <PinReference Kind="InputPin" Name="Count" />
                       </p:NodeReference>
                       <Pin Id="NCRWWQgt5eELW6fgEihQbe" Name="Array" Kind="InputPin" />
@@ -1424,10 +1429,6 @@
                       <Pin Id="Fz4S4vc3qB9MSZgofg7crp" Name="Output" Kind="StateOutputPin" />
                     </Node>
                   </Patch>
-                  <ControlPoint Id="MMeal5vnoLpM72Za1yO3zT" Bounds="1035,1014" Alignment="Top" />
-                  <ControlPoint Id="Av77qRNUm0DPS3lZkWe0EJ" Bounds="1069,1432" Alignment="Bottom" />
-                  <ControlPoint Id="TkjsBewIYPGOfnq60HjFEe" Bounds="1230,1014" Alignment="Top" />
-                  <ControlPoint Id="QT6xThW1apdLf3IlllLito" Bounds="1098,1432" Alignment="Bottom" />
                 </Node>
                 <Node Bounds="1032,920,48,19" Id="QuGXuOoQumiPEMcQUhVvtP">
                   <p:NodeReference LastCategoryFullName="Primitive.Object" LastSymbolSource="CoreLibBasics.vl">
@@ -1440,12 +1441,15 @@
                   <Pin Id="HQ3CccLRBCfLAT4xXFVrat" Name="Success" Kind="OutputPin" />
                 </Node>
                 <Node Bounds="1033,954,95,26" Id="R89B0DdMICaOSwQtkGJptu">
-                  <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArraySegment" LastSymbolSource="VL.Collections.vl">
+                  <p:NodeReference LastCategoryFullName="System.ArraySegment`1" LastSymbolSource="System.Runtime.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                    <CategoryReference Kind="ClassType" Name="MutableArraySegment" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ArraySegment`1" />
                     <Choice Kind="OperationCallFlag" Name="Create" />
+                    <PinReference Kind="InputPin" Name="Offset" />
                   </p:NodeReference>
                   <Pin Id="JvhDwSkwMplPSXZU2i13GX" Name="Array" Kind="InputPin" />
+                  <Pin Id="MXNktPD5lcqMBolc91otRG" Name="Offset" Kind="InputPin" />
+                  <Pin Id="SDc6JDRP4UbNUUtFXhnz2Z" Name="Count" Kind="InputPin" />
                   <Pin Id="RbPLr2l4pGkPKP8KxcXm7R" Name="Output" Kind="StateOutputPin" />
                 </Node>
                 <Node Bounds="1136,959,37,19" Id="GNb21GcHR5uOBJo0OJtRXm">
@@ -2184,7 +2188,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="QvD4CZU8skYLZynORDmDhr" Location="VL.Skia" Version="2021.4.10" />
+  <NugetDependency Id="QvD4CZU8skYLZynORDmDhr" Location="VL.Skia" Version="2021.4.9" />
   <PlatformDependency Id="STfsXzaK5C0LDV1kwoPISh" Location="System.Runtime" />
   <NugetDependency Id="NUg1w3SO5IpOtd9eOn8KxY" Location="WatsonWebsocket" Version="3.0.1" />
 </Document>
