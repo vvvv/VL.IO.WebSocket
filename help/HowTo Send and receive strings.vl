@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2021.4.10.1043" Version="0.128">
+<Document xmlns:p="property" xmlns:r="reflection" Id="I7F1A512iwkN0xtuauJhXe" LanguageVersion="2023.5.1-0003-gc12ae07d64" Version="0.128">
   <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.10" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
@@ -16,7 +16,7 @@
       <Patch Id="I0MNOY29Ym0M7WSJbX8gmQ">
         <Canvas Id="RYPsHRGuihtN7XwxeB82zh" CanvasType="Group">
           <Node Bounds="67,282,92,19" Id="KTDOnIQ6pC2OUUI7HOcdWn">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebSocketClient" />
             </p:NodeReference>
@@ -33,7 +33,7 @@
           </Node>
           <Pad Id="J0qIPu30mxBPfHzEbcaQNa" Comment="Is Connected" Bounds="156,325,35,35" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="737,285,99,19" Id="IY2uRyn63skOmFQNHEvan8">
-            <p:NodeReference>
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebSocketServer" />
             </p:NodeReference>
@@ -49,33 +49,33 @@
             <Pin Id="BMG1cMlu7CBPEvY5m0upn7" Name="Is Listening" Kind="OutputPin" />
           </Node>
           <Pad Id="FTshfv6HI7dLynHZ9BcSsU" Comment="Enabled" Bounds="833,243,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="PFdE5jGv9OtMZ1datsWoKU" Comment="Enabled" Bounds="156,226,35,35" ShowValueBox="true" isIOBox="true" Value="True">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="FUdgSjSOlo4N79ot3j2QBB" Comment="Uri" Bounds="70,185,118,15" ShowValueBox="true" isIOBox="true" Value="ws://127.0.0.1:6666">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+          <Pad Id="FUdgSjSOlo4N79ot3j2QBB" Comment="Uri" Bounds="70,185,222,15" ShowValueBox="true" isIOBox="true" Value="ws://127.0.0.1:6666">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="P9LmcTYfz7CMMrajafCTiS" Comment="Is Listening" Bounds="833,329,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="IIdHCf5zHVCLPm2ZcbAH9c" Comment="Listener IP" Bounds="739,170,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="SWJg9CGIk4GOLOTyU9mPGC" Comment="Port" Bounds="770,216,35,15" ShowValueBox="true" isIOBox="true" Value="6666">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="C0lpEPjdzSzLi7ZqLq1IyL" Comment="Send" Bounds="149,519,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -83,7 +83,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="244,666,86,19" Id="ASgtsByLRUAQIbGzWSOJmj">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StringReceiver (Queued)" />
               <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
@@ -96,7 +96,7 @@
             <Pin Id="ShYqbbrshASPbfTLIHXM4o" Name="Queue Length" Kind="OutputPin" />
           </Node>
           <Pad Id="LbMq1QGaGu7M83qTvgfQsQ" Bounds="337,674,159,19" ShowValueBox="true" isIOBox="true" Value="StringReceiver (Queued)">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -105,7 +105,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="244,771,86,19" Id="EQ2C4201SRDPcDjMVzadea">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StringReceiver (Reactive)" />
               <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
@@ -116,7 +116,7 @@
             <Pin Id="Ffr9iWayDo2MAHGo6143zd" Name="Result" Kind="OutputPin" />
           </Node>
           <Pad Id="QvNDHTlPlpUOW1Ae3QJNY4" Bounds="337,777,229,19" ShowValueBox="true" isIOBox="true" Value="StringReceiver (Reactive): Advanced">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -127,7 +127,7 @@
           <Pad Id="F05KjYHRsIHPBHihgn8kPY" Comment="" Bounds="246,589,83,16" ShowValueBox="true" isIOBox="true" />
           <Pad Id="TC1EM0kuCo4LL6aR2tc4mr" Comment="On Data" Bounds="357,588,35,35" ShowValueBox="true" isIOBox="true" />
           <Pad Id="GF27o0ch0TtN1OK4APyr8i" Bounds="337,517,295,40" ShowValueBox="true" isIOBox="true" Value="If multiple strings were received within a frame, this node returns only the last string received.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -136,7 +136,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="IHEWbqiuGEBQMJxakpjTf5" Bounds="337,698,295,59" ShowValueBox="true" isIOBox="true" Value="If multiple strings were received within a frame, this node returns all of them, one per frame, one after the other.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -145,7 +145,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="OSjCdQ7omIKN7NVqc5O4rH" Bounds="337,809,275,41" ShowValueBox="true" isIOBox="true" Value="Returns an Observable of all strings received per frame.">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -153,8 +153,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Node Bounds="737,732,55,26" Id="S5CprXLjecMOvTE6Zvx3Dl">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketServer" LastSymbolSource="VL.IO.WebSocket.vl">
+          <Node Bounds="737,732,85,26" Id="S5CprXLjecMOvTE6Zvx3Dl">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketServer" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendString (Async)" />
               <CategoryReference Kind="ClassType" Name="WebSocketServer" NeedsToBeDirectParent="true" />
@@ -168,12 +168,12 @@
             <Pin Id="Fi87G2nmtEbOwsJUmgtJTn" Name="Output" Kind="StateOutputPin" />
           </Node>
           <Pad Id="SXxnpWOrJv2P0eiWJI9bDb" Comment="Data" Bounds="801,663,64,15" ShowValueBox="true" isIOBox="true" Value="from server">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="AiLPAtE8KorL744ryKTVoC" Comment="Send" Bounds="839,692,35,35" ShowValueBox="true" isIOBox="true" Value="False">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
               <FullNameCategoryReference ID="Primitive" />
             </p:TypeAnnotation>
@@ -182,7 +182,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="757,451,80,19" Id="Oa247010MZaQDisUKsesuV">
-            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastSymbolSource="VL.Collections.vl">
+            <p:NodeReference LastCategoryFullName="Collections.Sequence" LastDependency="VL.CoreLib.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="FirstOrDefault" />
             </p:NodeReference>
@@ -192,7 +192,7 @@
             <Pin Id="LeqJHyu91SlOvtF8s60hZx" Name="Result" Kind="OutputPin" />
           </Node>
           <Node Bounds="895,522,86,19" Id="RIskbnRpGrXPy5rprABJL0">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StringReceiver" />
               <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
@@ -205,8 +205,8 @@
           </Node>
           <Pad Id="B3K9ixWU2DUPyKJ5RCBfDu" Comment="" Bounds="897,568,83,16" ShowValueBox="true" isIOBox="true" />
           <Pad Id="Nt2FP5YSj8oNs6SJwGGRmp" Comment="On Data" Bounds="998,566,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="67,562,47,26" Id="Oz6H0lm6A1CPn0THHZbU3f">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketClient" LastSymbolSource="VL.IO.WebSocket.vl">
+          <Node Bounds="67,562,75,26" Id="Oz6H0lm6A1CPn0THHZbU3f">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketClient" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="OperationCallFlag" Name="SendString (Async)" />
               <CategoryReference Kind="ClassType" Name="WebSocketClient" NeedsToBeDirectParent="true" />
@@ -219,12 +219,12 @@
             <Pin Id="KM135O7bRJEPY3o3iXY3Xz" Name="Output" Kind="OutputPin" />
           </Node>
           <Pad Id="CeUzyCQJ45fNmkUoMNtzrt" Comment="Data" Bounds="92,494,63,16" ShowValueBox="true" isIOBox="true" Value="from client">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastSymbolSource="CoreLibBasics.vl">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
           <Pad Id="SFZ8HdAYpVxQGryb3GKrR3" Bounds="234,636,63,19" ShowValueBox="true" isIOBox="true" Value="see also:">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -233,7 +233,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="BTbSKNhTx2ZQchm00gOkjR" Bounds="863,463,154,19" ShowValueBox="true" isIOBox="true" Value="&lt; send to the first client">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -242,7 +242,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Node Bounds="243,517,81,19" Id="M01LoR9NwLQO7nspBq36b1">
-            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastSymbolSource="VL.IO.WebSocket.vl">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="StringReceiver" />
               <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
@@ -255,7 +255,7 @@
             <Pin Id="PEqqDgkAZQCN5orj7VEiqa" Name="On Data" Kind="OutputPin" />
           </Node>
           <Pad Id="LBtQIptpKsUNTcwQFovJjO" Bounds="908,193,494,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket#accessing-from-outside-localhost">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -264,7 +264,7 @@
             </p:ValueBoxSettings>
           </Pad>
           <Pad Id="AFtij8KXjbPPxLUF6IoW76" Bounds="910,168,210,19" ShowValueBox="true" isIOBox="true" Value="Accessing from Outside Localhost">
-            <p:TypeAnnotation>
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
@@ -272,13 +272,40 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="JFlCfaNgmigNnGegJY4Bhh" Bounds="61,148,292,22" ShowValueBox="true" isIOBox="true" Value="https://www.piesocket.com/websocket-tester">
-            <p:TypeAnnotation>
+          <Pad Id="JFlCfaNgmigNnGegJY4Bhh" Bounds="728,123,292,22" ShowValueBox="true" isIOBox="true" Value="https://www.piesocket.com/websocket-tester">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
             <p:ValueBoxSettings>
               <p:fontsize p:Type="Int32">9</p:fontsize>
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="UpQRmhJ0gg9N7vr84DerBb" Bounds="62,141,263,19" ShowValueBox="true" isIOBox="true" Value="https://socketsbay.com/test-websockets">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VNE4FU13FDdNauX253XmTV" Bounds="62,123,120,19" ShowValueBox="true" isIOBox="true" Value="For testing clients:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="BO0ZgU7kklrOiBqZrB4Q85" Bounds="728,102,124,19" ShowValueBox="true" isIOBox="true" Value="For testing servers:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
         </Canvas>
