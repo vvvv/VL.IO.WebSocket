@@ -2,18 +2,18 @@
 <package xmlns="http://schemas.microsoft.com/packaging/2011/10/nuspec.xsd">
   <metadata>
     <id>VL.IO.WebSocket</id>
-    <version>0.7.0-alpha</version>
+    <version>0.8.0</version>
     <title>VL.IO.WebSocket</title>
     <authors>vvvv, Joel Christner</authors>
     <owners>vvvv</owners>
     <projectUrl>https://github.com/vvvv/VL.IO.WebSocket</projectUrl>
+    <repository type="git" url="https://github.com/vvvv/VL.IO.WebSocket.git"/>
     <requireLicenseAcceptance>false</requireLicenseAcceptance>
-    <summary>Websockets for VL</summary>
-    <description>Websockets for VL</description>
-    <tags>VL, network, websocket, ws</tags>
+    <description>Websocket client and server for VL</description>
+    <tags>VL, network, ws</tags>
     <license type="expression">MIT</license>
 	<dependencies>
-		<dependency id="WatsonWebsocket" version="4.0.10" />
+		<dependency id="WatsonWebsocket" version="4.1.2" />
     </dependencies>
     <icon>icon\nugeticon.png</icon>
   </metadata>

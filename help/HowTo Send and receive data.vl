@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2023.5.1-0003-gc12ae07d64" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2021.4.10-1021-g8bbd4c6f55" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2024.6.7" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -15,27 +15,31 @@
       </p:NodeReference>
       <Patch Id="I0MNOY29Ym0M7WSJbX8gmQ">
         <Canvas Id="RYPsHRGuihtN7XwxeB82zh" CanvasType="Group">
-          <Node Bounds="149,247,92,19" Id="KTDOnIQ6pC2OUUI7HOcdWn">
+          <Node Bounds="92,266,92,19" Id="KTDOnIQ6pC2OUUI7HOcdWn">
             <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebSocketClient" />
             </p:NodeReference>
+            <Pin Id="EMhAQHeeMpgOIRBtgXGx3z" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="L1MbmkI9XgVP5Wyc5ClWuO" Name="Server" Kind="InputPin" />
             <Pin Id="Tc4s1VOYj5mOj5BXUqNep9" Name="Accept Invalid Certificates" Kind="InputPin" />
-            <Pin Id="SsSkAB3b2k9L9Tnzmckq1H" Name="Connection Timeout in Seconds" Kind="InputPin" />
             <Pin Id="LZZlN0xahNeOPYxwDpTnoh" Name="Auto Reconnect" Kind="InputPin" DefaultValue="True" />
             <Pin Id="NbAP8i0FExEOBHOpf86n2J" Name="Enabled" Kind="InputPin" />
             <Pin Id="Lg71JGYGT8rNNUb7Y03lVj" Name="Output" Kind="OutputPin" />
             <Pin Id="Hrug1pj1ktiN6PC2IFAHiP" Name="Data" Kind="OutputPin" />
             <Pin Id="C7qqlCVTEOWOqKsGSBhG5w" Name="Statistics" Kind="OutputPin" />
             <Pin Id="P6ujj2W65R7PUmJ4w8sRoW" Name="Is Connected" Kind="OutputPin" />
+            <Pin Id="OHJzR8S1Q7KMCsiHRhfePY" Name="Auto Reconnect Delay" Kind="InputPin" IsHidden="true" />
+            <Pin Id="IWmxbdYZwyWLgRQlTt7o6E" Name="Enable Logging" Kind="InputPin" IsHidden="true" />
+            <Pin Id="PytMppb9MVULoF0zapxtS3" Name="Send Queue Length" Kind="OutputPin" />
           </Node>
-          <Pad Id="J0qIPu30mxBPfHzEbcaQNa" Comment="Is Connected" Bounds="238,288,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="544,235,93,19" Id="IY2uRyn63skOmFQNHEvan8">
+          <Pad Id="J0qIPu30mxBPfHzEbcaQNa" Comment="Is Connected" Bounds="159,365,35,35" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="712,254,105,19" Id="IY2uRyn63skOmFQNHEvan8">
             <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="WebSocketServer" />
             </p:NodeReference>
+            <Pin Id="O657ozEIqfAPS9FdwZxhev" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="UfyzmRMNtN1Nhol25rn2Xa" Name="Listener IP" Kind="InputPin" />
             <Pin Id="JbIpsk8M2AWNRI5r1Gdspy" Name="Port" Kind="InputPin" DefaultValue="4446" />
             <Pin Id="P9X62cHKYoZLCk5hv2xIap" Name="Ssl" Kind="InputPin" />
@@ -45,72 +49,275 @@
             <Pin Id="F7tyQppyu0QNHF4wF4GuHi" Name="Connected Clients" Kind="OutputPin" />
             <Pin Id="FsvnqpKPyvbNUNaluh8QAY" Name="Statistics" Kind="OutputPin" />
             <Pin Id="MMqe6hDDIG3PQFLLuMI6Cw" Name="Is Listening" Kind="OutputPin" />
+            <Pin Id="TMnUZgOnDmlPx8rgs7JBJ8" Name="Enable Logging" Kind="InputPin" IsHidden="true" />
+            <Pin Id="HdBIid1lUlBOvSpZbr07QM" Name="Send Queue Length" Kind="OutputPin" />
           </Node>
-          <Pad Id="H480U2eBnz5Ll9t3BeFl7S" Comment="Enabled" Bounds="238,204,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="H480U2eBnz5Ll9t3BeFl7S" Comment="Enabled" Bounds="181,223,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="FTshfv6HI7dLynHZ9BcSsU" Comment="Enabled" Bounds="634,192,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="FTshfv6HI7dLynHZ9BcSsU" Comment="Enabled" Bounds="802,211,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
           </Pad>
-          <Node Bounds="566,333,119,201" Id="LGX2kMGYjXNLTY5NBzQ0eF">
+          <Node Bounds="732,428,145,201" Id="LGX2kMGYjXNLTY5NBzQ0eF">
             <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <Choice Kind="ProcessAppFlag" Name="ForEach" />
               <CategoryReference Kind="Category" Name="Reactive" NeedsToBeDirectParent="true" />
             </p:NodeReference>
+            <Pin Id="M8Xa9LMWqTcN6MctVysRWv" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="L2xFtoLZMF9LLwlLz5FcLA" Name="Messages" Kind="InputPin" />
             <Pin Id="AOOPNGckuo4LSDRfgnvXvN" Name="Reset" Kind="InputPin" />
             <Pin Id="KuQNvGCszJUQOp6MSG4NVv" Name="Result" Kind="OutputPin" />
             <Patch Id="Irt1E58NJiqQKHxn6zDYCU" ManuallySortedPins="true">
-              <ControlPoint Id="BucT01RWQgCNTQ5JbEt1xg" Bounds="580,341" />
-              <ControlPoint Id="S5iyujdUmSDMngv2QIa9vH" Bounds="606,527" />
-              <Node Bounds="578,366,61,26" Id="FySAebmztjtP4xcGZfHDfH">
-                <p:NodeReference LastCategoryFullName="IO.WebSocket.WSMessage" LastDependency="VL.IO.WebSocket.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Split" />
-                  <CategoryReference Kind="ClassType" Name="WSMessage" NeedsToBeDirectParent="true" />
-                </p:NodeReference>
-                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-                <Pin Id="H4oVaBivSF7NjJtfabcoep" Name="Input" Kind="StateInputPin" />
-                <Pin Id="EmlJzYgpuXIOrwOWIGH718" Name="Ip Port" Kind="OutputPin" />
-                <Pin Id="P0Tt3mHYmWqMMW51XQZdZA" Name="Message Type" Kind="OutputPin" />
-                <Pin Id="EpJDAoLfia0NdN5ASMV6i3" Name="Data" Kind="OutputPin" />
-              </Node>
-              <Node Bounds="604,477,66,19" Id="FtWoG7TCE5mNI19LoFE0N8">
-                <p:NodeReference LastCategoryFullName="System.Serialization.Volatile" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <Choice Kind="OperationCallFlag" Name="Deserialize (Binary)" />
-                </p:NodeReference>
-                <Pin Id="DSMwl6tsb3VNIuLaTHZXq5" Name="Serialized Value" Kind="InputPin" />
-                <Pin Id="VL3RpmMwRTmNVivdchcwAy" Name="Force Little Endian" Kind="InputPin" />
-                <Pin Id="NlgN8vOzABgLa92B6yNcvh" Name="Result" Kind="OutputPin" />
-              </Node>
-              <Node Bounds="578,410,95,26" Id="RsDdEjL9XAFLU8XofdMM9n">
-                <p:NodeReference LastCategoryFullName="Collections.Mutable.MutableArraySegment" LastDependency="VL.CoreLib.vl">
-                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-                  <CategoryReference Kind="ClassType" Name="MutableArraySegment" NeedsToBeDirectParent="true" />
-                  <Choice Kind="OperationCallFlag" Name="ToArray" />
-                </p:NodeReference>
-                <Pin Id="UcbApkd33XINpYKoVUsytO" Name="Input" Kind="StateInputPin" />
-                <Pin Id="Dy98940hZzVPTJUZ8BPNUR" Name="Output" Kind="StateOutputPin" />
-                <Pin Id="BcQys7M6wMJQUR2MARVrJA" Name="Result" Kind="OutputPin" />
-              </Node>
+              <ControlPoint Id="BucT01RWQgCNTQ5JbEt1xg" Bounds="752,436" />
+              <ControlPoint Id="S5iyujdUmSDMngv2QIa9vH" Bounds="778,622" />
               <Patch Id="VP5RCXNskp9QEUKzpKc1Ef" Name="Create" ManuallySortedPins="true" />
               <Patch Id="K28TJaeIJIUPoGcIqrAYN9" Name="Update" ManuallySortedPins="true">
                 <Pin Id="NgXAB7GZ8P4NcbeOXYtrib" Name="Input 1" Kind="InputPin" />
-                <Pin Id="QIcQWBPIRMLPrc8uWv5Fqm" Name="Output" Kind="OutputPin">
-                  <p:TypeAnnotation LastCategoryFullName="System" LastDependency="VL.CoreLib.vl">
-                    <Choice Kind="TypeFlag" Name="DateTime" />
-                  </p:TypeAnnotation>
-                </Pin>
+                <Pin Id="QIcQWBPIRMLPrc8uWv5Fqm" Name="Output" Kind="OutputPin" />
               </Patch>
+              <Node Bounds="744,532,85,26" Id="BMdL9gb2SygLPFZwhEfp07">
+                <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketServer" LastDependency="VL.IO.WebSocket.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="WebSocketServer" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="SendString" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="BnjntMuvJnIPVlYuF04yyQ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="RH51icSO9VJL2nP8pwpNg3" Name="Client" Kind="InputPin" />
+                <Pin Id="BLJ3YXkYUHePaCuXpxHPmr" Name="Data" Kind="InputPin" />
+                <Pin Id="HmUUjOhhGEpNtXxyXirhWL" Name="Encoding" Kind="InputPin" />
+                <Pin Id="LcFv7ZZT37RP3qTIyBn2Mn" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
+                <Pin Id="PzOg1RDfpqkLj42ixP1wRM" Name="Apply" Kind="InputPin" DefaultValue="True" />
+                <Pin Id="I6IF2vkC3lhMq3mayRN8rS" Name="Output" Kind="StateOutputPin" />
+              </Node>
+              <Node Bounds="754,464,57,26" Id="Quai7CqK8GYLZmnXIMxnMy">
+                <p:NodeReference LastCategoryFullName="IO.WebSocket.WSMessage" LastDependency="VL.IO.WebSocket.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="WSMessage" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="Split" />
+                </p:NodeReference>
+                <Pin Id="GwnQLDQgoRnOUHXSBoKouQ" Name="Input" Kind="StateInputPin" />
+                <Pin Id="NCYkezqfpcZNhiVtN5iQWd" Name="Ip Port" Kind="OutputPin" />
+                <Pin Id="JP8wXWXTIeQOtSmPoPILMF" Name="Message Type" Kind="OutputPin" />
+                <Pin Id="TgvupT3bUrZOBRUPYsM4aN" Name="Data" Kind="OutputPin" />
+              </Node>
+              <Pad Id="A4wKOKDOR10PYiAJJ2cXUr" Comment="Data" Bounds="787,507,35,15" ShowValueBox="true" isIOBox="true" Value="pong">
+                <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="TypeFlag" Name="String" />
+                </p:TypeAnnotation>
+              </Pad>
+              <Node Bounds="797,580,63,19" Id="DP6XCCK1ng7MEZUQ4BYg7O">
+                <p:NodeReference LastCategoryFullName="Primitive.String" LastDependency="VL.CoreLib.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="StringType" Name="String" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="FromBytes" />
+                </p:NodeReference>
+                <Pin Id="UlapqIVjLksNrgRIQA5nuR" Name="Input" Kind="StateInputPin" />
+                <Pin Id="MGpjyHOsPWaORF5RPZfZLL" Name="Encoding" Kind="InputPin" />
+                <Pin Id="VrczJpFQkucQT9FMBYmdIk" Name="Result" Kind="OutputPin" />
+              </Node>
             </Patch>
           </Node>
-          <Pad Id="ThnpSvOVIkYNSaRr1xr3Ap" Comment="Send" Bounds="221,535,35,35" ShowValueBox="true" isIOBox="true" Value="False">
+          <Pad Id="CcKJSocL1c9LW0kliRYt7Y" Comment="Is Listening" Bounds="794,305,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="Rs0PDgx0auTPB798RM09Fq" Comment="Port" Bounds="743,185,35,15" ShowValueBox="true" isIOBox="true" Value="6666">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="Integer32" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="92,580,75,26" Id="OisovxwqRoHQcLjDUhHdfV">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketClient" LastDependency="VL.IO.WebSocket.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <CategoryReference Kind="ClassType" Name="WebSocketClient" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SendData" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="EIqRSafsEQCMcm84fX92Yf" Name="Input" Kind="StateInputPin" />
+            <Pin Id="SejiJMYkbPfL3om1e3wsEO" Name="Data" Kind="InputPin" />
+            <Pin Id="Ic36TWa39FxLhoxdcCtouD" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
+            <Pin Id="RomOuXOs2maNVIVzBHadYX" Name="Apply" Kind="InputPin" />
+            <Pin Id="GcfoRoyYIOhMdEzuCaZx5U" Name="Output" Kind="OutputPin" />
+          </Node>
+          <Node Bounds="732,653,65,19" Id="GPjuVsJyklAQHiEceZwaCz">
+            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
+            </p:NodeReference>
+            <Pin Id="MVi7tpwhTzMQLlV1UAHwmk" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="DivcOhNwl1rQWcAvoBipoc" Name="Initial Result" Kind="InputPin" IsHidden="true" />
+            <Pin Id="N9bzoOLvGqTP8OtT2sTLM3" Name="Async Notifications" Kind="InputPin" />
+            <Pin Id="VFmF8nijtk6O966zvFT2rE" Name="Reset" Kind="InputPin" />
+            <Pin Id="NAJOSyVevgrMyMS1JWkgXy" Name="Value" Kind="OutputPin" />
+            <Pin Id="CC2Typh7yaUOb4v59O1pzr" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="RgOSwzCkmpeQQ6RUHTiNIe" Comment="From client" Bounds="734,733,61,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="IAb02p38dHzOkWEv2wJaUe" Comment="Server" Bounds="94,163,104,15" ShowValueBox="true" isIOBox="true" Value="ws://127.0.0.1:6666">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="MbadJU3JKTYLy4hAGk7awQ" Comment="Listener IP" Bounds="714,162,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Pad Id="Pws4kYHgLbmM5iJr8lt7ND" Bounds="917,280,494,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket#accessing-from-outside-localhost">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="KDyVlSRpQkPOnX71EJmOJk" Bounds="919,255,210,19" ShowValueBox="true" isIOBox="true" Value="Accessing from Outside Localhost">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="OS6XinsIZNdLthdzEHMTVX" Bounds="701,123,292,22" ShowValueBox="true" isIOBox="true" Value="https://www.piesocket.com/websocket-tester">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S84T2eNJw0uNmFpcoUDHNJ" Bounds="87,127,263,19" ShowValueBox="true" isIOBox="true" Value="https://socketsbay.com/test-websockets">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="GoFPyLeMZDGM1ljsrKJk6A" Bounds="87,109,120,19" ShowValueBox="true" isIOBox="true" Value="For testing clients:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="NrawAENvFWFQYhGBrcrU1Z" Bounds="701,102,124,19" ShowValueBox="true" isIOBox="true" Value="For testing servers:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FejZR79LF7UNfARe41SoKj" Comment="Connected Clients" Bounds="754,344,99,49" ShowValueBox="true" isIOBox="true" />
+          <Node Bounds="207,903,86,19" Id="HNb5LyFgJLpLmqnhuKsOUC">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StringReceiver (Queued)" />
+              <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="IRZOkwoLIEEOP08v3MjHKw" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CC9ISRQjFH0NcnQ8fE3mL3" Name="Input" Kind="InputPin" />
+            <Pin Id="C8sAhxCsCFiMW6yt7azLXm" Name="Encoding" Kind="InputPin" />
+            <Pin Id="MTGRv1EssAYNxYmRMP06Hm" Name="Clear Queue" Kind="InputPin" />
+            <Pin Id="Lt4ArsH8mP3OvFinhvpEa2" Name="Result" Kind="OutputPin" />
+            <Pin Id="ONU8sOamb6hOtN7ogiCTXo" Name="Queue Length" Kind="OutputPin" />
+          </Node>
+          <Pad Id="MimOQJxgznWPFxguCFi19s" Bounds="300,911,159,19" ShowValueBox="true" isIOBox="true" Value="StringReceiver (Queued)">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="207,1008,86,19" Id="Cxa1S4JY1PGOb9bp2ePQ6h">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StringReceiver (Reactive)" />
+              <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="NcRpe5ecGR4PaqdY2qgfLC" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="G3xI5MMifmuMZhqybfnbrF" Name="Input" Kind="InputPin" />
+            <Pin Id="D2iQHy33Z4eNaX9iQ9W26N" Name="Encoding" Kind="InputPin" />
+            <Pin Id="HOSJexhs4L1MbEJkBXhMke" Name="Result" Kind="OutputPin" />
+          </Node>
+          <Pad Id="G9LDWeymcsCPI64iAfhGGe" Bounds="300,1014,229,19" ShowValueBox="true" isIOBox="true" Value="StringReceiver (Reactive): Advanced">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SnbyVT1a5xjPKG3aLfdwmx" Comment="From server" Bounds="209,841,83,16" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="BxWj8KUPl4cOrRGLc2jbZw" Comment="On Data" Bounds="284,796,35,35" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="RReB7k7jOoJNFZF5FlEeif" Bounds="300,754,295,40" ShowValueBox="true" isIOBox="true" Value="If multiple strings were received within a frame, this node returns only the last string received.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="F8uFyrd8gJQNzjyDFTXHY9" Bounds="300,935,295,59" ShowValueBox="true" isIOBox="true" Value="If multiple strings were received within a frame, this node returns all of them, one per frame, one after the other.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="LT1eCD6ni6nPhpn5Ht9BcP" Bounds="300,1046,275,41" ShowValueBox="true" isIOBox="true" Value="Returns an Observable of all strings received per frame.">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="T5hWXalZl0VMOnbYBqPPgr" Bounds="197,873,63,19" ShowValueBox="true" isIOBox="true" Value="see also:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="206,754,81,19" Id="ACIZWwVOgQNLido4ola4tp">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
+              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+              <Choice Kind="ProcessAppFlag" Name="StringReceiver" />
+              <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
+            </p:NodeReference>
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="VqwHHM4oZ1IMSxeWvg22iJ" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="CTw4BVSIw59MGKOTS5rCyP" Name="Initial Result" Kind="InputPin" IsHidden="true" />
+            <Pin Id="TqjXhOY8V7LOsewCqqFz51" Name="Input" Kind="InputPin" />
+            <Pin Id="PZ5fg8FEsOFLxxIfYKb6rJ" Name="Encoding" Kind="InputPin" />
+            <Pin Id="HCc2USzL74sQdvIKBFzZMf" Name="Reset" Kind="InputPin" />
+            <Pin Id="BR5pwmYZrElOAkwMahsoxT" Name="Result" Kind="OutputPin" />
+            <Pin Id="RyuytVyzNgvOH93SNCqJk0" Name="On Data" Kind="OutputPin" />
+          </Node>
+          <Pad Id="Aqpi2Yrnao1LKfnh3mRmUW" Comment="Apply" Bounds="174,483,35,35" ShowValueBox="true" isIOBox="true" Value="False">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -118,71 +325,134 @@
               <p:buttonmode p:Assembly="VL.UI.Forms" p:Type="VL.HDE.PatchEditor.Editors.ButtonModeEnum">Bang</p:buttonmode>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="CcKJSocL1c9LW0kliRYt7Y" Comment="Is Listening" Bounds="634,277,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Rs0PDgx0auTPB798RM09Fq" Comment="Port" Bounds="575,166,35,15" ShowValueBox="true" isIOBox="true" Value="6666">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="Integer32" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Node Bounds="149,579,75,26" Id="OisovxwqRoHQcLjDUhHdfV">
+          <Node Bounds="92,526,85,26" Id="IIW8YEXbzaXMQIPI0DDD3W">
             <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketClient" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="SendData (Async)" />
               <CategoryReference Kind="ClassType" Name="WebSocketClient" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SendString" />
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
-            <Pin Id="EIqRSafsEQCMcm84fX92Yf" Name="Input" Kind="StateInputPin" />
-            <Pin Id="SejiJMYkbPfL3om1e3wsEO" Name="Data" Kind="InputPin" />
-            <Pin Id="RomOuXOs2maNVIVzBHadYX" Name="Apply" Kind="InputPin" />
-            <Pin Id="GcfoRoyYIOhMdEzuCaZx5U" Name="Output" Kind="OutputPin" />
+            <Pin Id="Q2oviBLJG5hNusIBeWqZXa" Name="Input" Kind="StateInputPin" />
+            <Pin Id="HSuzM7h2WvGPtQJHUEfgPQ" Name="Data" Kind="InputPin" />
+            <Pin Id="LAO3UijM5eIPJpXtg7uQtI" Name="Encoding" Kind="InputPin" />
+            <Pin Id="NILBlVD4SisM09EIEX6WtY" Name="Cancellation Token" Kind="InputPin" IsHidden="true" />
+            <Pin Id="H4faDmrYBR3NMv9Bb1ehX5" Name="Apply" Kind="InputPin" />
+            <Pin Id="SRO3m8o9yWYMXA9aSkIQGK" Name="Output" Kind="OutputPin" />
           </Node>
-          <Node Bounds="184,384,36,19" Id="Rpyh3FzU1FVQISGD2vKhQO">
-            <p:NodeReference LastCategoryFullName="System.DateTime" LastDependency="VL.CoreLib.vl">
+          <Pad Id="Le0zi2yYZZ3M4I39PZRkgj" Comment="Data" Bounds="121,458,63,16" ShowValueBox="true" isIOBox="true" Value="ping">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+          </Pad>
+          <Node Bounds="590,433,85,26" Id="P8WpUvGlTI2O9MAynV2IjI">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketServer" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Now" />
-              <CategoryReference Kind="RecordType" Name="DateTime" NeedsToBeDirectParent="true" />
+              <CategoryReference Kind="ClassType" Name="WebSocketServer" NeedsToBeDirectParent="true" />
+              <Choice Kind="OperationCallFlag" Name="SendData" />
             </p:NodeReference>
-            <Pin Id="QHSstv9bt60PRl6IKClaDC" Name="Now" Kind="OutputPin" />
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="Klt27CFXNQaN7joCCaCFbc" Name="Input" Kind="StateInputPin" />
+            <Pin Id="KXrmPHNoWviLPD4ZXSTAaR" Name="Client" Kind="InputPin" />
+            <Pin Id="FenJO9Ek0D5MElL93tQLul" Name="Data" Kind="InputPin" />
+            <Pin Id="D7l2I5PrK4QLnAWisFzqOb" Name="Cancellation Token" Kind="InputPin" />
+            <Pin Id="UbLV30RuHocQag1LH1yx25" Name="Output" Kind="StateOutputPin" />
+            <Pin Id="QtYUJPiY4CzOolTEfmWndq" Name="Apply" Kind="InputPin" />
           </Node>
-          <Node Bounds="184,428,54,19" Id="RpmFAw2EW6mOfpaAc5hluq">
-            <p:NodeReference LastCategoryFullName="System.Serialization.Volatile" LastDependency="VL.CoreLib.vl">
+          <Node Bounds="80,636,110,80" Id="VkFbBo1ozPDMdghKYlJZRD">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Control" />
+              <Choice Kind="ProcessAppFlag" Name="Comment" />
+            </p:NodeReference>
+            <Patch Id="AJAL6Kyk1XhLUg0bv9cBaA" ManuallySortedPins="true">
+              <Patch Id="GBfCFlMWOirOSn8IjrVvT8" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="PtTD6WjhWa9Li2S4yKcG28" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="EhVNhS23rGEOElbPNBuRhi" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="92,665,86,26" Id="STorLmYPtU4MbOa3wgA11m">
+                <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketClient" LastDependency="VL.IO.WebSocket.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="WebSocketClient" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="SendAsync" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="VXgedhokcFhOGcLvRuFLVF" Name="Input" Kind="StateInputPin" />
+                <Pin Id="CMvTxf4lanuNZ8JAQDiYJA" Name="Data" Kind="InputPin" />
+                <Pin Id="HidQrpz3uOMPayqVDWp44g" Name="Cancellation Token" Kind="InputPin" />
+                <Pin Id="RPFPvHpZnnWMc9MPYooQFg" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="SpG40q3gDxpPlzdf6A05x8" Name="Message Type" Kind="InputPin" />
+                <Pin Id="SPnaRzcLNDKNbno7vOtBQm" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <Pin Id="Lc3a37urtXgOCvkTE2LvxT" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Node Bounds="578,508,110,80" Id="Gw4zcffgALMN3YpyoSZB27">
+            <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
+              <CategoryReference Kind="Category" Name="Control" />
+              <Choice Kind="ProcessAppFlag" Name="Comment" />
+            </p:NodeReference>
+            <Patch Id="GjAuG2kLrH6NVlM9WAppJ0" ManuallySortedPins="true">
+              <Patch Id="U5YqxEZia4PLYOxVLTGQNm" Name="Create" ManuallySortedPins="true" />
+              <Patch Id="Q6GkPemuBJhNqhoFYXvSBQ" Name="Update" ManuallySortedPins="true" />
+              <Patch Id="P5llv6iQ444OLLRH4IYe23" Name="Dispose" ManuallySortedPins="true" />
+              <Node Bounds="590,537,86,26" Id="BLJsuWi2YPXN8POM3UXUtM">
+                <p:NodeReference LastCategoryFullName="IO.WebSocket.WebSocketServer" LastDependency="VL.IO.WebSocket.vl">
+                  <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                  <CategoryReference Kind="ClassType" Name="WebSocketServer" NeedsToBeDirectParent="true" />
+                  <Choice Kind="OperationCallFlag" Name="SendAsync" />
+                </p:NodeReference>
+                <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+                <Pin Id="OhQKQ8QiC9PN4MLerSINH3" Name="Input" Kind="StateInputPin" />
+                <Pin Id="RanDayrzj9jOYPh9iq6IaV" Name="Client" Kind="InputPin" />
+                <Pin Id="SBqwcizFDizLMVJIpp4iYF" Name="Data" Kind="InputPin" />
+                <Pin Id="Ql8npt5QsirLpotO4luKaI" Name="Message Type" Kind="InputPin" />
+                <Pin Id="H58fnVuRnbnLUapBDJpzup" Name="Cancellation Token" Kind="InputPin" />
+                <Pin Id="AO9mTlG0c5kPLk5U01cRVP" Name="Output" Kind="StateOutputPin" />
+                <Pin Id="NhnZRL2DlY8LrODpJxSsIn" Name="Result" Kind="OutputPin" />
+              </Node>
+            </Patch>
+            <Pin Id="P5hhu2BmhPCMbFKcBKkv8O" Name="Node Context" Kind="InputPin" IsHidden="true" />
+          </Node>
+          <Pad Id="HnQZl8tWVbHMjYQOsA3OVd" Bounds="198,587,173,21" ShowValueBox="true" isIOBox="true" Value="&lt; For sending raw bytes">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VUx1xr08P7EOXsexMf715x" Bounds="198,541,153,19" ShowValueBox="true" isIOBox="true" Value="&lt; For sending strings">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AqXxWlzjJLGPXAZWZlronT" Bounds="198,676,227,19" ShowValueBox="true" isIOBox="true" Value="&lt; For dealing with the returned Task">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Node Bounds="635,898,54,19" Id="GArca4DTpGWNz05Eazza9s">
+            <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="Serialize (Binary)" />
+              <CategoryReference Kind="Category" Name="WebSocket" NeedsToBeDirectParent="true" />
+              <Choice Kind="ProcessAppFlag" Name="Receiver" />
             </p:NodeReference>
-            <Pin Id="FVMRBd97dgBO0dxQXqDpf3" Name="Value" Kind="InputPin" />
-            <Pin Id="Sa52bK50pNGPoLi9rsJYLf" Name="Force Little Endian" Kind="InputPin" />
-            <Pin Id="GvALE41w0VWQXiL7VT4Njk" Name="Result" Kind="OutputPin" />
+            <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
+            <Pin Id="D8qXO8hSTELOuN7yKmvoFd" Name="Node Context" Kind="InputPin" IsHidden="true" />
+            <Pin Id="U0U1QonvVWrNfmU8v75hba" Name="Input" Kind="InputPin" />
+            <Pin Id="QtEAyU13TWUMNik9DUaanX" Name="Result" Kind="OutputPin" />
+            <Pin Id="OiwTvNvj7s9O2tzppkRBwO" Name="Reset" Kind="InputPin" />
           </Node>
-          <Node Bounds="566,558,65,19" Id="GPjuVsJyklAQHiEceZwaCz">
-            <p:NodeReference LastCategoryFullName="Reactive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="ProcessAppFlag" Name="HoldLatest" />
-            </p:NodeReference>
-            <Pin Id="N9bzoOLvGqTP8OtT2sTLM3" Name="Async Notifications" Kind="InputPin" />
-            <Pin Id="VFmF8nijtk6O966zvFT2rE" Name="Reset" Kind="InputPin" />
-            <Pin Id="NAJOSyVevgrMyMS1JWkgXy" Name="Value" Kind="OutputPin" />
-            <Pin Id="CC2Typh7yaUOb4v59O1pzr" Name="On Data" Kind="OutputPin" />
-          </Node>
-          <Node Bounds="566,601,55,19" Id="NhiipzGqbMEP2uKYUFBbTj">
-            <p:NodeReference LastCategoryFullName="System.Conversion" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
-              <Choice Kind="OperationCallFlag" Name="ToString" />
-            </p:NodeReference>
-            <Pin Id="RsBTxhjcbk0MfgmYB07tRD" Name="Input" Kind="InputPin" />
-            <Pin Id="IPRf7ePb9f5NWQE4LMloMj" Name="Result" Kind="OutputPin" />
-          </Node>
-          <Pad Id="RgOSwzCkmpeQQ6RUHTiNIe" Comment="received from client" Bounds="568,657,125,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IAb02p38dHzOkWEv2wJaUe" Comment="Server" Bounds="151,144,104,15" ShowValueBox="true" isIOBox="true" Value="ws://127.0.0.1:6666">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="MbadJU3JKTYLy4hAGk7awQ" Comment="Listener IP" Bounds="546,143,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-          </Pad>
-          <Pad Id="DHApcbB4CgNNMeCnH6Eh8J" Bounds="687,525,170,19" ShowValueBox="true" isIOBox="true" Value="&lt; Annotated to &quot;DateTime&quot;">
+          <Pad Id="Mx7CzDDVsjwP6JCBHHou16" Bounds="705,901,162,19" ShowValueBox="true" isIOBox="true" Value="&lt; For receiving raw bytes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -191,7 +461,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Gc2h9dONZV5N5oZtjI8SRM" Bounds="251,394,130,56" ShowValueBox="true" isIOBox="true" Value="&lt; Say we want to send the current time">
+          <Pad Id="DliivZLUllJMucQxubqaim" Bounds="322,299,130,62" ShowValueBox="true" isIOBox="true" Value="&lt; When using the non-advanced Send nodes">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -200,60 +470,8 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="Pws4kYHgLbmM5iJr8lt7ND" Bounds="749,261,494,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket#accessing-from-outside-localhost">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="KDyVlSRpQkPOnX71EJmOJk" Bounds="751,236,210,19" ShowValueBox="true" isIOBox="true" Value="Accessing from Outside Localhost">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="OS6XinsIZNdLthdzEHMTVX" Bounds="533,104,292,22" ShowValueBox="true" isIOBox="true" Value="https://www.piesocket.com/websocket-tester">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="S84T2eNJw0uNmFpcoUDHNJ" Bounds="144,108,263,19" ShowValueBox="true" isIOBox="true" Value="https://socketsbay.com/test-websockets">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="GoFPyLeMZDGM1ljsrKJk6A" Bounds="144,90,120,19" ShowValueBox="true" isIOBox="true" Value="For testing clients:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
-          <Pad Id="NrawAENvFWFQYhGBrcrU1Z" Bounds="533,83,124,19" ShowValueBox="true" isIOBox="true" Value="For testing servers:">
-            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
-              <Choice Kind="TypeFlag" Name="String" />
-            </p:TypeAnnotation>
-            <p:ValueBoxSettings>
-              <p:fontsize p:Type="Int32">9</p:fontsize>
-              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
-            </p:ValueBoxSettings>
-          </Pad>
+          <Pad Id="FVugtloP0cEM1UnpgDPRoL" Comment="Send Queue Length" Bounds="181,300,35,15" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="DRx46LZWvnVPt7u2JN4BPg" Comment="On Data" Bounds="794,686,35,35" ShowValueBox="true" isIOBox="true" />
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
@@ -266,24 +484,36 @@
         <Link Id="Kb5S7ABroZhLgQFn8YawWD" Ids="FTshfv6HI7dLynHZ9BcSsU,C86oFf0UIl5Nl6C9mhGJPT" />
         <Link Id="R86P0PpB224NUFAjJsu4uq" Ids="NgXAB7GZ8P4NcbeOXYtrib,BucT01RWQgCNTQ5JbEt1xg" IsHidden="true" />
         <Link Id="KJx0FTgK8wpPgd26xLcUAU" Ids="S5iyujdUmSDMngv2QIa9vH,QIcQWBPIRMLPrc8uWv5Fqm" IsHidden="true" />
-        <Link Id="GbBh3QcZRshOx7vH915sWQ" Ids="BucT01RWQgCNTQ5JbEt1xg,H4oVaBivSF7NjJtfabcoep" />
         <Link Id="SBMW4xHTdRAOwDPAOvJ7bv" Ids="Mj0ljQULWLjQTVBqEoNZ9n,L2xFtoLZMF9LLwlLz5FcLA" />
-        <Link Id="VVshKtZXjStPqI1fzKv51k" Ids="Lg71JGYGT8rNNUb7Y03lVj,EIqRSafsEQCMcm84fX92Yf" />
         <Link Id="CHACe4jhSiaL1pFJzOJ0uE" Ids="MMqe6hDDIG3PQFLLuMI6Cw,CcKJSocL1c9LW0kliRYt7Y" />
         <Link Id="B4sL4OB36BOQHu527q7m50" Ids="Rs0PDgx0auTPB798RM09Fq,JbIpsk8M2AWNRI5r1Gdspy" />
-        <Link Id="A3mN6U094v1LleGxW93SOW" Ids="ThnpSvOVIkYNSaRr1xr3Ap,RomOuXOs2maNVIVzBHadYX" />
-        <Link Id="N1qcNnNUj2dOKLgqEF2Ner" Ids="QHSstv9bt60PRl6IKClaDC,FVMRBd97dgBO0dxQXqDpf3" />
         <Link Id="Djwo8dbdMxMNxpP8tAZllY" Ids="KuQNvGCszJUQOp6MSG4NVv,N9bzoOLvGqTP8OtT2sTLM3" />
-        <Link Id="N1MUGLoZQNDMXRP7tCpVqb" Ids="IPRf7ePb9f5NWQE4LMloMj,RgOSwzCkmpeQQ6RUHTiNIe" />
         <Link Id="LuW4iV7x0OLOuOJEJNsnGU" Ids="IAb02p38dHzOkWEv2wJaUe,L1MbmkI9XgVP5Wyc5ClWuO" />
         <Link Id="PfaAhERPuA4OMq0rmapTio" Ids="MbadJU3JKTYLy4hAGk7awQ,UfyzmRMNtN1Nhol25rn2Xa" />
-        <Link Id="SBEewEKKEirPjAWiqtKn8j" Ids="NAJOSyVevgrMyMS1JWkgXy,RsBTxhjcbk0MfgmYB07tRD" />
-        <Link Id="CQqzmxUUQGROXaGesidFdK" Ids="EpJDAoLfia0NdN5ASMV6i3,UcbApkd33XINpYKoVUsytO" />
-        <Link Id="VJzy0dTsXPTPg7EGOdHQVa" Ids="NlgN8vOzABgLa92B6yNcvh,S5iyujdUmSDMngv2QIa9vH" />
-        <Link Id="L8CRci4MdrLPHV8AtiYsHD" Ids="BcQys7M6wMJQUR2MARVrJA,DSMwl6tsb3VNIuLaTHZXq5" />
-        <Link Id="L1Q8bq6bmF1OknijguC6HB" Ids="GvALE41w0VWQXiL7VT4Njk,SejiJMYkbPfL3om1e3wsEO" />
+        <Link Id="JXGpX7B8aDQMqBGOJ3bBlO" Ids="F7tyQppyu0QNHF4wF4GuHi,FejZR79LF7UNfARe41SoKj" />
+        <Link Id="RnegCOC0MUFMRVGaM7RNrJ" Ids="BR5pwmYZrElOAkwMahsoxT,SnbyVT1a5xjPKG3aLfdwmx" />
+        <Link Id="Mqk87lmA71IPWpzryHAQbc" Ids="RyuytVyzNgvOH93SNCqJk0,BxWj8KUPl4cOrRGLc2jbZw" />
+        <Link Id="VeGCDZjn2LxMS49ahfsdE2" Ids="Le0zi2yYZZ3M4I39PZRkgj,HSuzM7h2WvGPtQJHUEfgPQ" />
+        <Link Id="LMAlX7n7FkILCwdESEER2d" Ids="Aqpi2Yrnao1LKfnh3mRmUW,H4faDmrYBR3NMv9Bb1ehX5" />
+        <Link Id="MD01rhDa45eOVXH9sDZkIB" Ids="Lg71JGYGT8rNNUb7Y03lVj,Q2oviBLJG5hNusIBeWqZXa" />
+        <Link Id="OIS64NGP6MwLIYiHlCYhLg" Ids="SRO3m8o9yWYMXA9aSkIQGK,EIqRSafsEQCMcm84fX92Yf" />
+        <Link Id="TXLQcB3kaPMObqGTwnmjN3" Ids="Hrug1pj1ktiN6PC2IFAHiP,TqjXhOY8V7LOsewCqqFz51" />
+        <Link Id="MmXu4hWtnwwNjcsVYoZhRQ" Ids="S8NL6VRO9WEMOm6lbIZeGA,BnjntMuvJnIPVlYuF04yyQ" />
+        <Link Id="LHkPtnfsBw1P2RH4d5vacL" Ids="GcfoRoyYIOhMdEzuCaZx5U,VXgedhokcFhOGcLvRuFLVF" />
+        <Link Id="IGOL7wy1BGaQDp3KA8oTTC" Ids="UbLV30RuHocQag1LH1yx25,OhQKQ8QiC9PN4MLerSINH3" />
+        <Link Id="I3RnTCpcr1XN7HAzlLcIZm" Ids="BucT01RWQgCNTQ5JbEt1xg,GwnQLDQgoRnOUHXSBoKouQ" />
+        <Link Id="KJJFvjAOTfGLiXPVncbRG3" Ids="NCYkezqfpcZNhiVtN5iQWd,RH51icSO9VJL2nP8pwpNg3" />
+        <Link Id="MjS7PIALUIYOSpF39QcwVf" Ids="A4wKOKDOR10PYiAJJ2cXUr,BLJ3YXkYUHePaCuXpxHPmr" />
+        <Link Id="ObaFxysJJZjOsFrRYKfeUO" Ids="TgvupT3bUrZOBRUPYsM4aN,UlapqIVjLksNrgRIQA5nuR" />
+        <Link Id="OA1KaFrryiGOlNnVsbULmm" Ids="VrczJpFQkucQT9FMBYmdIk,S5iyujdUmSDMngv2QIa9vH" />
+        <Link Id="Lg9du0yF8YKL1D8uvynvJn" Ids="NAJOSyVevgrMyMS1JWkgXy,RgOSwzCkmpeQQ6RUHTiNIe" />
+        <Link Id="DGHHwLyMuC0PB6xfHhzExG" Ids="S8NL6VRO9WEMOm6lbIZeGA,Klt27CFXNQaN7joCCaCFbc" />
+        <Link Id="FUn2VubIi06PtWNADpVy1S" Ids="PytMppb9MVULoF0zapxtS3,FVugtloP0cEM1UnpgDPRoL" />
+        <Link Id="Aur5XRkWykTNZhsBTgTy2C" Ids="CC2Typh7yaUOb4v59O1pzr,DRx46LZWvnVPt7u2JN4BPg" />
       </Patch>
     </Node>
   </Patch>
   <NugetDependency Id="EMdqDINPhbdMdb5nhN78zd" Location="VL.IO.WebSocket" Version="0.0.0.0" />
+  <NugetDependency Id="VJx5QFPiLWJNTdBQDdnBdX" Location="VL.Serialization.FSPickler" Version="2024.6.7" />
+  <NugetDependency Id="ThrE0ewvqUHLMiiGSTlKqq" Location="VL.IO.Websocket" Version="0.2.1-alpha" />
 </Document>
