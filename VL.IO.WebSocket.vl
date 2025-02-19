@@ -2052,7 +2052,7 @@
     ************************ Split ************************
 
 -->
-            <Node Name="Split" Bounds="502,347,198,269" Id="TNQdjIpRjm9P5LS4TSlzMI">
+            <Node Name="Split" Bounds="500,347,206,335" Id="TNQdjIpRjm9P5LS4TSlzMI">
               <p:NodeReference LastCategoryFullName="Primitive" LastDependency="builtin">
                 <Choice Kind="OperationDefinition" Name="Operation" />
               </p:NodeReference>
@@ -2084,10 +2084,10 @@
                 </Node>
                 <ControlPoint Id="KVz3bvYOWCHQQmuShb9wam" Bounds="656,484" />
                 <Link Id="QDEJmpUVhmdOz1nxIFDXWE" Ids="KVz3bvYOWCHQQmuShb9wam,ABZuXlKBPibPCQbTOvXCar" IsHidden="true" />
-                <ControlPoint Id="MIVccRR5CZJQKQlJszyHof" Bounds="539,599" />
+                <ControlPoint Id="MIVccRR5CZJQKQlJszyHof" Bounds="537,665" />
                 <Link Id="Aznm1UAZF2tLTI0tgy8RLd" Ids="MIVccRR5CZJQKQlJszyHof,FYZPNhnQITEOazMdg03xDI" IsHidden="true" />
                 <Link Id="Dsadl6aO3C8M9VrWaPERg7" Ids="IctgRtxeeIiP0EMX9Qm2nu,O0v0DFrTR9MPZjKZvMtoaG" />
-                <Node Bounds="514,520,77,26" Id="Js2CHLCm6IeOmbPebDYcIJ">
+                <Node Bounds="512,586,77,26" Id="Js2CHLCm6IeOmbPebDYcIJ">
                   <p:NodeReference LastCategoryFullName="IO.WebSocket.WSMessage" LastDependency="VL.IO.WebSocket.vl">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <CategoryReference Kind="ClassType" Name="WSMessage" />
@@ -2097,16 +2097,18 @@
                   <Pin Id="ARztxXjfCNDLSmwIVe6haJ" Name="Output" Kind="StateOutputPin" />
                   <Pin Id="U75dU1Unur4MBlTliSo7qJ" Name="Message Type" Kind="OutputPin" />
                 </Node>
-                <ControlPoint Id="MgdBt5cAwAmPxMpcDT6mwD" Bounds="589,567" />
+                <ControlPoint Id="MgdBt5cAwAmPxMpcDT6mwD" Bounds="619,646" />
                 <Link Id="EqDmEOAacN6L8ZBsDaheae" Ids="U75dU1Unur4MBlTliSo7qJ,MgdBt5cAwAmPxMpcDT6mwD" />
                 <Link Id="DJGryfGfi6wP1P0XF1mlhH" Ids="MgdBt5cAwAmPxMpcDT6mwD,K7HkX6nM49QOREQEkn7UH7" IsHidden="true" />
                 <Pin Id="LERdImUtWigLxCrHpqzIeP" Name="Input" Kind="InputPin" Bounds="517,365" />
                 <Pin Id="FYZPNhnQITEOazMdg03xDI" Name="Ip Port" Kind="OutputPin" Bounds="562,516" />
+                <Pin Id="MIaaBTHEj8LMTkXdbWsInq" Name="Guid" Kind="OutputPin" />
+                <Link Id="VBFP0roXb1lM3Fa32oZqiM" Ids="A8sPOxNL7pXLDrdyQd5hsx,MIaaBTHEj8LMTkXdbWsInq" IsHidden="true" />
                 <Pin Id="K7HkX6nM49QOREQEkn7UH7" Name="Message Type" Kind="OutputPin" Bounds="592,568" />
                 <Pin Id="ABZuXlKBPibPCQbTOvXCar" Name="Data" Kind="OutputPin" Bounds="575,454" />
                 <Link Id="GNDg1X7tA8TOHh5soGlwNY" Ids="C62kqt8Tm8cMM9IEPI1W1Q,KVz3bvYOWCHQQmuShb9wam" />
                 <Link Id="JhA0yEzy104LoqTQjQIpBt" Ids="ScZu6OXHzzvPnNG0sGoX58,DK0x54H9lm7MA2W0FHV6Hy" />
-                <Node Bounds="540,482,70,26" Id="RTEUWxZIe2EMxPDd3xataU">
+                <Node Bounds="541,485,70,26" Id="RTEUWxZIe2EMxPDd3xataU">
                   <p:NodeReference LastCategoryFullName="WatsonWebsocket.ClientMetadata" LastDependency="WatsonWebsocket.dll">
                     <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                     <Choice Kind="OperationCallFlag" Name="IpPort" />
@@ -2116,6 +2118,19 @@
                   <Pin Id="Dr0FJuC2IXmLEFIyZCkB99" Name="Ip Port" Kind="OutputPin" />
                 </Node>
                 <Link Id="U8pXB6rU3cQMrNMhgMjCp0" Ids="Dr0FJuC2IXmLEFIyZCkB99,MIVccRR5CZJQKQlJszyHof" />
+                <Link Id="RRomjHncDYAM5ziEAssZm2" Ids="KRdQ3Y2OmUmOktt3lQqs8G,OxFe5aCEye6QPj84D0rFNg" />
+                <Node Bounds="541,531,70,26" Id="JRN6tdZGjkBPytlTIbjSIz">
+                  <p:NodeReference LastCategoryFullName="WatsonWebsocket.ClientMetadata" LastDependency="WatsonWebsocket.dll">
+                    <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
+                    <CategoryReference Kind="AssemblyCategory" Name="ClientMetadata" NeedsToBeDirectParent="true" />
+                    <Choice Kind="OperationCallFlag" Name="Guid" />
+                  </p:NodeReference>
+                  <Pin Id="OxFe5aCEye6QPj84D0rFNg" Name="Input" Kind="StateInputPin" />
+                  <Pin Id="BEquAP3yGRNNueBldWhDj9" Name="Output" Kind="StateOutputPin" />
+                  <Pin Id="KX3I0JDiABMOhhyyRt1Eme" Name="Guid" Kind="OutputPin" />
+                </Node>
+                <ControlPoint Id="A8sPOxNL7pXLDrdyQd5hsx" Bounds="588,665" />
+                <Link Id="PfHKKhJmyDNPptVEzMmjEQ" Ids="KX3I0JDiABMOhhyyRt1Eme,A8sPOxNL7pXLDrdyQd5hsx" />
               </Patch>
             </Node>
           </Canvas>
@@ -2663,6 +2678,24 @@
           </Patch>
         </Node>
       </Canvas>
+      <!--
+
+    ************************ ClientMetadata ************************
+
+-->
+      <Node Name="ClientMetadata" Bounds="510,375" Id="TPB0S7i5CHOL1XTIOSUvvX">
+        <p:NodeReference>
+          <Choice Kind="ForwardDefinition" Name="Forward" />
+          <CategoryReference Kind="Category" Name="Primitive" />
+        </p:NodeReference>
+        <p:TypeAnnotation LastCategoryFullName="WatsonWebsocket" LastDependency="WatsonWebsocket.dll">
+          <Choice Kind="TypeFlag" Name="ClientMetadata" />
+        </p:TypeAnnotation>
+        <Patch Id="I3GTMhAcQnUMsTb5tnqE00">
+          <Canvas Id="SIQQ64R4qLjQPrKxuhxQsm" BordersChecked="false" CanvasType="Group" />
+          <ProcessDefinition Id="SLgFGSmMpH2LW3af1NfrSW" IsHidden="true" />
+        </Patch>
+      </Node>
     </Canvas>
     <!--
 

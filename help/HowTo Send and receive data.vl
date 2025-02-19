@@ -55,7 +55,7 @@
             <Pin Id="TMnUZgOnDmlPx8rgs7JBJ8" Name="Enable Logging" Kind="InputPin" IsHidden="true" />
             <Pin Id="HdBIid1lUlBOvSpZbr07QM" Name="Send Queue Length" Kind="OutputPin" />
           </Node>
-          <Pad Id="H480U2eBnz5Ll9t3BeFl7S" Comment="Enabled" Bounds="181,223,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="H480U2eBnz5Ll9t3BeFl7S" Comment="Enabled" Bounds="194,223,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -98,7 +98,7 @@
                 <Pin Id="PzOg1RDfpqkLj42ixP1wRM" Name="Apply" Kind="InputPin" DefaultValue="True" />
                 <Pin Id="I6IF2vkC3lhMq3mayRN8rS" Name="Output" Kind="StateOutputPin" />
               </Node>
-              <Node Bounds="754,464,57,26" Id="Quai7CqK8GYLZmnXIMxnMy">
+              <Node Bounds="754,464,65,26" Id="Quai7CqK8GYLZmnXIMxnMy">
                 <p:NodeReference LastCategoryFullName="IO.WebSocket.WSMessage" LastDependency="VL.IO.WebSocket.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="WSMessage" NeedsToBeDirectParent="true" />
@@ -106,6 +106,7 @@
                 </p:NodeReference>
                 <Pin Id="GwnQLDQgoRnOUHXSBoKouQ" Name="Input" Kind="StateInputPin" />
                 <Pin Id="NCYkezqfpcZNhiVtN5iQWd" Name="Ip Port" Kind="OutputPin" />
+                <Pin Id="JXfkVT5bk6bP0GbW7uEWs3" Name="Guid" Kind="OutputPin" />
                 <Pin Id="JP8wXWXTIeQOtSmPoPILMF" Name="Message Type" Kind="OutputPin" />
                 <Pin Id="TgvupT3bUrZOBRUPYsM4aN" Name="Data" Kind="OutputPin" />
               </Node>
@@ -127,7 +128,7 @@
             </Patch>
           </Node>
           <Pad Id="CcKJSocL1c9LW0kliRYt7Y" Comment="Is Listening" Bounds="794,305,35,35" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="Rs0PDgx0auTPB798RM09Fq" Comment="Port" Bounds="743,185,35,15" ShowValueBox="true" isIOBox="true" Value="6666">
+          <Pad Id="Rs0PDgx0auTPB798RM09Fq" Comment="Port" Bounds="748,187,35,15" ShowValueBox="true" isIOBox="true" Value="8080">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
@@ -158,7 +159,7 @@
             <Pin Id="CC2Typh7yaUOb4v59O1pzr" Name="On Data" Kind="OutputPin" />
           </Node>
           <Pad Id="RgOSwzCkmpeQQ6RUHTiNIe" Comment="From client" Bounds="734,733,61,15" ShowValueBox="true" isIOBox="true" />
-          <Pad Id="IAb02p38dHzOkWEv2wJaUe" Comment="Server" Bounds="94,163,104,15" ShowValueBox="true" isIOBox="true" Value="ws://127.0.0.1:6666">
+          <Pad Id="IAb02p38dHzOkWEv2wJaUe" Comment="Server" Bounds="94,163,104,15" ShowValueBox="true" isIOBox="true" Value="ws://127.0.0.1:8080">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -222,7 +223,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="FejZR79LF7UNfARe41SoKj" Comment="Connected Clients" Bounds="754,344,99,95" ShowValueBox="true" isIOBox="true" />
+          <Pad Id="FejZR79LF7UNfARe41SoKj" Comment="Connected Clients" Bounds="754,344,96,62" ShowValueBox="true" isIOBox="true" />
           <Node Bounds="207,903,86,19" Id="HNb5LyFgJLpLmqnhuKsOUC">
             <p:NodeReference LastCategoryFullName="IO.WebSocket" LastDependency="VL.IO.WebSocket.vl">
               <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
@@ -342,7 +343,7 @@
             <Pin Id="H4faDmrYBR3NMv9Bb1ehX5" Name="Apply" Kind="InputPin" />
             <Pin Id="SRO3m8o9yWYMXA9aSkIQGK" Name="Output" Kind="OutputPin" />
           </Node>
-          <Pad Id="Le0zi2yYZZ3M4I39PZRkgj" Comment="Data" Bounds="121,458,63,16" ShowValueBox="true" isIOBox="true" Value="asf">
+          <Pad Id="Le0zi2yYZZ3M4I39PZRkgj" Comment="Data" Bounds="121,458,63,16" ShowValueBox="true" isIOBox="true" Value="ping">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -475,7 +476,7 @@
           </Pad>
           <Pad Id="FVugtloP0cEM1UnpgDPRoL" Comment="Send Queue Length" Bounds="194,306,35,15" ShowValueBox="true" isIOBox="true" />
           <Pad Id="DRx46LZWvnVPt7u2JN4BPg" Comment="On Data" Bounds="794,686,35,35" ShowValueBox="true" isIOBox="true" />
-          <Node Bounds="678,881,81,84" Id="JJttP5aooRQNF2oF9Pj3gi">
+          <Node Bounds="678,881,89,84" Id="JJttP5aooRQNF2oF9Pj3gi">
             <p:NodeReference LastCategoryFullName="Control" LastDependency="VL.CoreLib.vl">
               <Choice Kind="StatefulRegion" Name="Region (Stateful)" Fixed="true" />
               <CategoryReference Kind="Category" Name="Control" />
@@ -485,7 +486,7 @@
               <Patch Id="FSMsHjwVJ3TPevVTvGqorj" Name="Create" ManuallySortedPins="true" />
               <Patch Id="VikNpsKGWeBOj5LgVzGAJB" Name="Update" ManuallySortedPins="true" />
               <Patch Id="O3NzLhLmwciOZdIBf3jTmr" Name="Dispose" ManuallySortedPins="true" />
-              <Node Bounds="690,913,57,26" Id="JDkREpHQBQVMdNIftr1T9h">
+              <Node Bounds="690,913,65,26" Id="JDkREpHQBQVMdNIftr1T9h">
                 <p:NodeReference LastCategoryFullName="IO.WebSocket.WSMessage" LastDependency="VL.IO.WebSocket.vl">
                   <Choice Kind="NodeFlag" Name="Node" Fixed="true" />
                   <CategoryReference Kind="ClassType" Name="WSMessage" />
@@ -494,6 +495,7 @@
                 <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
                 <Pin Id="R4VaO4k4dHaNJcrY22KWAb" Name="Input" Kind="StateInputPin" />
                 <Pin Id="VBRO9zfgDF1LHiaBSkhezs" Name="Ip Port" Kind="OutputPin" />
+                <Pin Id="B8e3JCqSJGgPyU6eUZup6u" Name="Guid" Kind="OutputPin" />
                 <Pin Id="RYivC4mxMqVLsG1KvbWiO6" Name="Message Type" Kind="OutputPin" />
                 <Pin Id="UeaY4dKXUfmMApICiceaU7" Name="Data" Kind="OutputPin" />
               </Node>
