@@ -584,9 +584,7 @@
       </Patch>
     </Node>
   </Patch>
-  <NugetDependency Id="JHol5B2ZpBqMWxSrqP5y82" Location="VL.Audio" Version="1.9.9" />
   <NugetDependency Id="NLDEgDt0bU1M2R7T5Ired9" Location="VL.IO.WebSocket" Version="0.8.1" />
-  <NugetDependency Id="NcVIGAFBv0mLzPCu9Ealea" Location="VL.CEF" Version="0.5.4" />
   <NugetDependency Id="DeDIbgjC3S3Pbti6N0uyET" Location="VL.Serialization.MessagePack" Version="2025.7.0-0091-g7e8b50a312" />
   <NugetDependency Id="EdCkT0Az9LDPgxFt34cvLy" Location="VL.Skia" Version="2025.7.0-0091-g7e8b50a312" />
 </Document>
