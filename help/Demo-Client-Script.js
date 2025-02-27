@@ -6,19 +6,6 @@ window.addEventListener("load", () => {
 
     var socket = null
 
-    function sendData()
-    {
-        const message = serialize(form)
-
-        try {
-            socket.send(message);
-        }
-        catch (error){
-            console.log (error)
-        }
-    }
-
-
     try{
         socket = new WebSocket('ws://127.0.0.1:4444');
         socket.onopen = function(event) {
@@ -40,6 +27,18 @@ window.addEventListener("load", () => {
     }
     catch{
         console.log ("Can't connect")
+    }
+
+    function sendData()
+    {
+        const message = serialize(form)
+
+        try {
+            socket.send(message);
+        }
+        catch (error){
+            console.log (error)
+        }
     }
 
     form.addEventListener("input", sendData);
