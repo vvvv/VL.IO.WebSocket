@@ -1,7 +1,9 @@
 window.addEventListener("load", () => {
 
     var socket = null
-    var lastHoveredState = false
+	var isHovered = false
+	
+	var message={}
 
     const toastLiveExample = document.getElementById('liveToast')
     const toastBootstrap = bootstrap.Toast.getOrCreateInstance(toastLiveExample)
@@ -10,20 +12,42 @@ window.addEventListener("load", () => {
     const hoverElements = Array.from(document.querySelectorAll('[data-hover]'))
     hoverElements.forEach(item => {
         item.addEventListener('mouseenter', () => {
-            sendHover(true)
+			if (!isHovered)
+			{
+				isHovered = true
+				message.Hovered = isHovered
+				sendData()
+			}
         })
         item.addEventListener('mouseleave', () => {
-            sendHover(false)
+			if (isHovered)
+			{
+				isHovered = false
+				message.Hovered = isHovered
+				sendData()
+			}
         })
     });
 
     // Listener for interactive elements 
     const activeElements = Array.from(document.querySelectorAll('[data-key]'))
     activeElements.forEach(item => {
-        item.addEventListener('click', ()=>{
-            sendValue(item)
-        })
-    });
+		if (item.tagName == "A")
+		{
+			item.addEventListener('click', ()=>{
+			setProperty(item)
+            sendData()
+			})
+		}
+		else
+		{
+			item.addEventListener('input', ()=>{
+				setProperty(item)
+				sendData()
+			})
+		}
+
+    })
 
     // Connect to WebSocket Server
     try{
@@ -56,9 +80,11 @@ window.addEventListener("load", () => {
         items.forEach(item => {
             if (item.dataset.init !== undefined)
             {
-                sendValue(item)
+                setProperty(item)
             } 
-        });
+        })
+		message.Hovered = isHovered;
+		sendData()
     }
 
     function showToast(data)
@@ -70,18 +96,19 @@ window.addEventListener("load", () => {
         toastBootstrap.show()
     }
 
-    function sendValue(item)
-    {
-        const value = item.dataset.value ? item.dataset.value : item.value
-        socket.send (JSON.stringify ({ [item.dataset.key]: value}))
-    }
+	function setProperty(item)
+	{
+		const value = item.dataset.value ? item.dataset.value : item.value
+		const floatValue = parseFloat(value)
+		const valueToSend = !isNaN(floatValue) ? floatValue : value  
+		message[item.dataset.key] = valueToSend
+	}
+	
+	function sendData()
+	{
+		console.log (message)
+		socket.send (JSON.stringify(message))
+	}
 
-    function sendHover(hover){
-        if (lastHoveredState != hover)
-        {
-            socket.send (JSON.stringify ({ hovered: hover}))
-            lastHoveredState = hover
-        }
-    }
 
 });
