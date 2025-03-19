@@ -9,6 +9,7 @@ For use with vvvv, the visual live-programming environment for .NET: http://vvvv
     `nuget install VL.IO.Websocket`
   
 - Usage examples and more information are included in the pack and can be found via the [Help Browser](https://thegraybook.vvvv.org/reference/hde/findinghelp.html)
+- Info on [Accessing the WebSocket from outside of localhost](https://github.com/jchristn/WatsonWebsocket?tab=readme-ov-file#accessing-from-outside-localhost)
 
 ## Contributing
 - Report issues on [the vvvv forum](https://forum.vvvv.org/c/vvvv-gamma/28)
