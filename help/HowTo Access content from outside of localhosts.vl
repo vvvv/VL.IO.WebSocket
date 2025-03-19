@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" xmlns:r="reflection" Id="M0BGmWo3WSRQMKDbxjVNDy" LanguageVersion="2024.6.7" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2024.6.7" />
+  <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
+    <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" BordersChecked="false" CanvasType="FullCategory" />
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="B9mJLc2oxwDLGo91ig3Wpa">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="I0MNOY29Ym0M7WSJbX8gmQ">
+        <Canvas Id="RYPsHRGuihtN7XwxeB82zh" CanvasType="Group">
+          <Pad Id="Ur1eQv2YU6zPowC5lCd3dU" Bounds="145,369,743,29" ShowValueBox="true" isIOBox="true" Value="NETSH http add urlacl url=http://[hostname]:[port]/ user=everyone listen=yes">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="AClxNDVvDY7OufzFOwPB1o" Bounds="124,113,581,63" ShowValueBox="true" isIOBox="true" Value="In order for the WebSocket to be accessible from other devices check the following:&#xD;&#xA;&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="PlW6ddO719IMMVAgvcv0jA" Bounds="124,485,251,19" ShowValueBox="true" isIOBox="true" Value="If this doesn't help, see more infos here:">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="VaZUr7GJyY6NhxTLnhdpW2" Bounds="124,507,497,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket?tab=readme-ov-file#accessing-from-outside-localhost">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="S8OFDf2iMiyM073tqCvSWH" Bounds="145,403,633,63" ShowValueBox="true" isIOBox="true" Value="The &quot;everyone&quot; in &quot;user=everyone&quot; is language specific, so e.g. in german is &quot;jeder&quot; and in spanish &quot;todos&quot;&#xD;&#xA;e.g.:&#xD;&#xA;NETSH http add urlacl url=http://192.168.0.101:4444/ user=everyone listen=yes">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="CoreLibBasics.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="RDu8sokM1rxLxtVWEl5hgP" Bounds="73,404,60,55" ShowValueBox="true" isIOBox="true" Value="⚠️">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">25</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="ERlpUHekYWwOK442oe8NV7" Bounds="124,192,387,41" ShowValueBox="true" isIOBox="true" Value="- Open a port on your firewall to permit traffic on the TCP port upon which the webserver is listening:&#xD;&#xA;&#xD;&#xA;">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="FIZ0Co7M8vnLOsPAQGrWzE" Bounds="145,237,576,61" ShowValueBox="true" isIOBox="true" Value="Windows Firewall -&gt; Advanced Settings -&gt; Inbound Rules -&gt; New Rule -&gt; Port -&gt; TCP...">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">14</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+          <Pad Id="SObcQOT108vO6jBL3jWvVP" Bounds="124,304,380,61" ShowValueBox="true" isIOBox="true" Value="- Either run vvvv (or your exported app) as admin&#xD;&#xA;- Or add a URL ACL by running this command in an elevated commandline (ie. with admin rights):">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">9</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
+        </Canvas>
+        <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
+        <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
+        <ProcessDefinition Id="DkdeiUunEGjPqmcqHzP5pF">
+          <Fragment Id="GjvNbC8USL7MuQJPNAZsKK" Patch="UBwxIRYdGuaNBmvWmIuHGI" Enabled="true" />
+          <Fragment Id="VgHgeYSDb7DQPpdxfekWws" Patch="VAs79qR7v5BOExKDOw5KyQ" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="VJ8q0V1Ren4LEKcNoHypfb" Location="VL.Skia" Version="2024.6.7" />
+  <NugetDependency Id="TQuWIqxSJkuMhpwCrNFLq9" Location="VL.IO.HTTP.WebServer" Version="0.1.1-alpha" />
+</Document>
