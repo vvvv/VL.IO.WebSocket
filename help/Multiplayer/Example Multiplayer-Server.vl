@@ -301,7 +301,7 @@
               <Choice Kind="ProcessAppFlag" Name="WebSocketServer" />
             </p:NodeReference>
             <Pin Id="KrsUrgY5Db2LZfEn0KEsOK" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="GPgXQLLDQ7KMwSNDeIXzia" Name="Listener IP" Kind="InputPin" />
+            <Pin Id="RQsCpIoTnaxNuvX3Y31Exo" Name="Hostname or IP" Kind="InputPin" />
             <Pin Id="UzaqIE7qZ5xLM9LEbFoWkd" Name="Port" Kind="InputPin" />
             <Pin Id="MeUu1pSVYFSMS5e22wHnbW" Name="Ssl" Kind="InputPin" DefaultValue="False" />
             <Pin Id="LzCNy06ZeWjPR3pucjnap1" Name="Enabled" Kind="InputPin" />
@@ -313,7 +313,7 @@
             <Pin Id="GQPk8heXtGWQIfqroVsqlH" Name="Send Queue Length" Kind="OutputPin" />
             <Pin Id="OLRLZVXUXg4MPytaggTyDW" Name="Enable Logging" Kind="InputPin" IsHidden="true" />
           </Node>
-          <Pad Id="Nkbp2gm3hQ2N8PZiY3uFcI" Comment="Listener IP" Bounds="72,92,86,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+          <Pad Id="Nkbp2gm3hQ2N8PZiY3uFcI" Comment="Hostname or IP" Bounds="72,92,86,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -323,7 +323,7 @@
               <Choice Kind="TypeFlag" Name="Integer32" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="IZbxsj6OlSBMhHd1qx8g9O" Comment="Enabled" Bounds="246,94,35,35" ShowValueBox="true" isIOBox="true" Value="True">
+          <Pad Id="IZbxsj6OlSBMhHd1qx8g9O" Comment="Enabled" Bounds="183,129,35,35" ShowValueBox="true" isIOBox="true" Value="True">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="ImmutableTypeFlag" Name="Boolean" />
             </p:TypeAnnotation>
@@ -684,7 +684,6 @@
           <Fragment Id="QeXlWA4JdXKQbKv2MAg2mw" Patch="S723nD8IrReMmWtGYt3rSF" Enabled="true" />
         </ProcessDefinition>
         <Slot Id="J20HiJb5bU1PmctisWYj4p" Name="Clients" />
-        <Link Id="RlXvWgE6bzSLL2ScO0WS0u" Ids="Nkbp2gm3hQ2N8PZiY3uFcI,GPgXQLLDQ7KMwSNDeIXzia" />
         <Link Id="AcFALR7RgAAOnPS12qZnog" Ids="IZbxsj6OlSBMhHd1qx8g9O,LzCNy06ZeWjPR3pucjnap1" />
         <Link Id="IO2URNbalZjLFiYn5tpS9L" Ids="Ol1VqjhsBMNLAAt2V3Ptgj,BRHP8QLOhlVMYTycRwKcEW" />
         <Link Id="OHB15kaQP4dM1NTG26KJds" Ids="SFpDm2IlGCaL9xYtO9rYUY,UIaE6a16NBVQLGZG4ngRfA" IsHidden="true" />
@@ -728,6 +727,7 @@
         <Link Id="HABHbRD9vlpPadbX5pYCBN" Ids="DsBAcLO8kx9OzMvVLFYISx,AZx1Lo1T4GCN4DMzJ5qi9a" />
         <Link Id="R3lioDYRoAWNRZbIlnxbsU" Ids="Gh3ckdvddODMfLGj5kkvVl,D3jQSYE0lKrO4Ar2DlPC7R" />
         <Link Id="Fx3kwjfgvxWNPE5qas1Ew2" Ids="TLBHnx5fr5XPCBGd3SV1cK,DxlmHIGSYJxM5JT7rtVRnE" />
+        <Link Id="MBzVQrS5bBnNNlMeJWniDV" Ids="Nkbp2gm3hQ2N8PZiY3uFcI,RQsCpIoTnaxNuvX3Y31Exo" />
       </Patch>
     </Node>
   </Patch>

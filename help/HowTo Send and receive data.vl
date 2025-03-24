@@ -43,7 +43,7 @@
             </p:NodeReference>
             <p:HelpFocus p:Assembly="VL.Lang" p:Type="VL.Model.HelpPriority">High</p:HelpFocus>
             <Pin Id="O657ozEIqfAPS9FdwZxhev" Name="Node Context" Kind="InputPin" IsHidden="true" />
-            <Pin Id="UfyzmRMNtN1Nhol25rn2Xa" Name="Listener IP" Kind="InputPin" />
+            <Pin Id="TVDfaPte8FdL3GV54axCDO" Name="Hostname or IP" Kind="InputPin" />
             <Pin Id="JbIpsk8M2AWNRI5r1Gdspy" Name="Port" Kind="InputPin" DefaultValue="4446" />
             <Pin Id="P9X62cHKYoZLCk5hv2xIap" Name="Ssl" Kind="InputPin" />
             <Pin Id="C86oFf0UIl5Nl6C9mhGJPT" Name="Enabled" Kind="InputPin" />
@@ -164,7 +164,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="MbadJU3JKTYLy4hAGk7awQ" Comment="Listener IP" Bounds="714,162,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
+          <Pad Id="MbadJU3JKTYLy4hAGk7awQ" Comment="Hostname or IP" Bounds="714,162,53,15" ShowValueBox="true" isIOBox="true" Value="127.0.0.1">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -519,7 +519,6 @@
         <Link Id="B4sL4OB36BOQHu527q7m50" Ids="Rs0PDgx0auTPB798RM09Fq,JbIpsk8M2AWNRI5r1Gdspy" />
         <Link Id="Djwo8dbdMxMNxpP8tAZllY" Ids="KuQNvGCszJUQOp6MSG4NVv,N9bzoOLvGqTP8OtT2sTLM3" />
         <Link Id="LuW4iV7x0OLOuOJEJNsnGU" Ids="IAb02p38dHzOkWEv2wJaUe,L1MbmkI9XgVP5Wyc5ClWuO" />
-        <Link Id="PfaAhERPuA4OMq0rmapTio" Ids="MbadJU3JKTYLy4hAGk7awQ,UfyzmRMNtN1Nhol25rn2Xa" />
         <Link Id="JXGpX7B8aDQMqBGOJ3bBlO" Ids="F7tyQppyu0QNHF4wF4GuHi,FejZR79LF7UNfARe41SoKj" />
         <Link Id="RnegCOC0MUFMRVGaM7RNrJ" Ids="BR5pwmYZrElOAkwMahsoxT,SnbyVT1a5xjPKG3aLfdwmx" />
         <Link Id="Mqk87lmA71IPWpzryHAQbc" Ids="RyuytVyzNgvOH93SNCqJk0,BxWj8KUPl4cOrRGLc2jbZw" />
@@ -540,6 +539,7 @@
         <Link Id="DGHHwLyMuC0PB6xfHhzExG" Ids="S8NL6VRO9WEMOm6lbIZeGA,Klt27CFXNQaN7joCCaCFbc" />
         <Link Id="FUn2VubIi06PtWNADpVy1S" Ids="PytMppb9MVULoF0zapxtS3,FVugtloP0cEM1UnpgDPRoL" />
         <Link Id="Aur5XRkWykTNZhsBTgTy2C" Ids="CC2Typh7yaUOb4v59O1pzr,DRx46LZWvnVPt7u2JN4BPg" />
+        <Link Id="DjGFg6BcNr1QbKpa99Eduv" Ids="MbadJU3JKTYLy4hAGk7awQ,TVDfaPte8FdL3GV54axCDO" />
       </Patch>
     </Node>
   </Patch>
