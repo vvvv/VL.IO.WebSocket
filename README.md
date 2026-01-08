@@ -1,6 +1,11 @@
 # VL.IO.Websocket
 Websocket Client and Server nodes. 
 
+For an introduction, watch vvvvTv episodes:  
+📺 [Talking to an API via WebSocket](https://www.youtube.com/live/TTvkQgGZfZw)  
+📺 [Multiplayer installation using WebSocket](https://www.youtube.com/live/GtKx2v5Egxw)  
+📺 [Controlling apps via a Web UI using WebSocket](https://www.youtube.com/live/DR1ay0WR418)
+
 For use with vvvv, the visual live-programming environment for .NET: http://vvvv.org
 
 ## Getting started
