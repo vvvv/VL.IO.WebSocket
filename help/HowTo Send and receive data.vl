@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<Document xmlns:p="property" xmlns:r="reflection" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2024.6.7" Version="0.128">
-  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2024.6.7" />
+<Document xmlns:p="property" xmlns:r="reflection" Id="GLaku8QERuBNuLoica1tvY" LanguageVersion="2025.7.1" Version="0.128">
+  <NugetDependency Id="EZUnema5doTP51SeSqBc43" Location="VL.CoreLib" Version="2025.7.1" />
   <Patch Id="DRdtZLOOVdjMBJH8Giq9e8">
     <Canvas Id="JQWM12ukQLfMW8RnQD04JR" DefaultCategory="Main" CanvasType="FullCategory" />
     <!--
@@ -74,6 +74,7 @@
             <Pin Id="M8Xa9LMWqTcN6MctVysRWv" Name="Node Context" Kind="InputPin" IsHidden="true" />
             <Pin Id="L2xFtoLZMF9LLwlLz5FcLA" Name="Messages" Kind="InputPin" />
             <Pin Id="AOOPNGckuo4LSDRfgnvXvN" Name="Reset" Kind="InputPin" />
+            <Pin Id="Pj9XlmXJIADNVZXqRNHbOA" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="KuQNvGCszJUQOp6MSG4NVv" Name="Result" Kind="OutputPin" />
             <Patch Id="Irt1E58NJiqQKHxn6zDYCU" ManuallySortedPins="true">
               <ControlPoint Id="BucT01RWQgCNTQ5JbEt1xg" Bounds="752,436" />
@@ -155,6 +156,7 @@
             <Pin Id="DivcOhNwl1rQWcAvoBipoc" Name="Initial Result" Kind="InputPin" IsHidden="true" />
             <Pin Id="N9bzoOLvGqTP8OtT2sTLM3" Name="Async Notifications" Kind="InputPin" />
             <Pin Id="VFmF8nijtk6O966zvFT2rE" Name="Reset" Kind="InputPin" />
+            <Pin Id="BXsdkMkeWGqLSab5lCbqJH" Name="Output" Kind="OutputPin" IsHidden="true" />
             <Pin Id="NAJOSyVevgrMyMS1JWkgXy" Name="Value" Kind="OutputPin" />
             <Pin Id="CC2Typh7yaUOb4v59O1pzr" Name="On Data" Kind="OutputPin" />
           </Node>
@@ -169,7 +171,7 @@
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
           </Pad>
-          <Pad Id="Pws4kYHgLbmM5iJr8lt7ND" Bounds="917,280,494,19" ShowValueBox="true" isIOBox="true" Value="https://github.com/jchristn/WatsonWebsocket#accessing-from-outside-localhost">
+          <Pad Id="Pws4kYHgLbmM5iJr8lt7ND" Bounds="917,280,494,19" ShowValueBox="true" isIOBox="true" Value=".\HowTo Access content from outside of localhosts.vl">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -178,7 +180,7 @@
               <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Link</p:stringtype>
             </p:ValueBoxSettings>
           </Pad>
-          <Pad Id="KDyVlSRpQkPOnX71EJmOJk" Bounds="919,255,210,19" ShowValueBox="true" isIOBox="true" Value="Accessing from Outside Localhost">
+          <Pad Id="KDyVlSRpQkPOnX71EJmOJk" Bounds="919,255,210,19" ShowValueBox="true" isIOBox="true" Value="Accessing from Outside Localhost:">
             <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
               <Choice Kind="TypeFlag" Name="String" />
             </p:TypeAnnotation>
@@ -502,6 +504,15 @@
             </Patch>
             <Pin Id="VfPgccxiaSEQSf8nnKU2ED" Name="Node Context" Kind="InputPin" IsHidden="true" />
           </Node>
+          <Pad Id="PdFkVF2HTuNPoIg4GkF7Ah" Bounds="861,248,55,52" ShowValueBox="true" isIOBox="true" Value="⚠️">
+            <p:TypeAnnotation LastCategoryFullName="Primitive" LastDependency="VL.CoreLib.vl">
+              <Choice Kind="TypeFlag" Name="String" />
+            </p:TypeAnnotation>
+            <p:ValueBoxSettings>
+              <p:fontsize p:Type="Int32">25</p:fontsize>
+              <p:stringtype p:Assembly="VL.Core" p:Type="VL.Core.StringType">Comment</p:stringtype>
+            </p:ValueBoxSettings>
+          </Pad>
         </Canvas>
         <Patch Id="UBwxIRYdGuaNBmvWmIuHGI" Name="Create" />
         <Patch Id="VAs79qR7v5BOExKDOw5KyQ" Name="Update" />
@@ -544,6 +555,6 @@
     </Node>
   </Patch>
   <NugetDependency Id="EMdqDINPhbdMdb5nhN78zd" Location="VL.IO.WebSocket" Version="0.0.0.0" />
-  <NugetDependency Id="VJx5QFPiLWJNTdBQDdnBdX" Location="VL.Serialization.FSPickler" Version="2024.6.7" />
+  <NugetDependency Id="VJx5QFPiLWJNTdBQDdnBdX" Location="VL.Serialization.FSPickler" Version="2025.7.1" />
   <NugetDependency Id="ThrE0ewvqUHLMiiGSTlKqq" Location="VL.IO.Websocket" Version="0.2.1-alpha" />
 </Document>
